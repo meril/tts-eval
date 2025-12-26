@@ -2,6 +2,8 @@
 
 A comprehensive evaluation framework for comparing Cartesia Sonic 3 and ElevenLabs Flash v2.5 text-to-speech models.
 
+**[View Live Demo](https://tts-model-comparison.vercel.app)** - Listen to audio comparisons and see evaluation results
+
 ## Overview
 
 This framework provides:
