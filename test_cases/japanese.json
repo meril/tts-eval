@@ -1,0 +1,90 @@
+{
+  "language": "ja",
+  "language_name": "Japanese",
+  "test_categories": [
+    {
+      "category": "kanji_readings",
+      "description": "漢字の読み分け (Kanji Readings)",
+      "tests": [
+        {
+          "test_id": "J1-K1",
+          "text": "今日は会社に行って、明日の会議の準備をします。",
+          "expected_challenges": ["今日 (きょう vs こんにち)", "行 (いく vs おこなう)", "Context-dependent readings"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "numbers_counters",
+      "description": "数字と助数詞 (Numbers & Counters)",
+      "tests": [
+        {
+          "test_id": "J2-N1",
+          "text": "りんご3個、本5冊、猫2匹、車1台を買いました。",
+          "expected_challenges": ["Counter words (こ, さつ, ひき, だい)", "Number pronunciation changes"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "pitch_accent",
+      "description": "アクセントの違い (Pitch Accent Minimal Pairs)",
+      "tests": [
+        {
+          "test_id": "J3-PA1",
+          "text": "橋の端を箸で渡った。",
+          "expected_challenges": ["はし with different pitch accents (bridge/edge/chopsticks)"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "keigo_register",
+      "description": "敬語レベル (Keigo & Register)",
+      "tests": [
+        {
+          "test_id": "J4-R1",
+          "text": "お客様、大変申し訳ございませんが、只今満席となっております。少々お待ちいただけますでしょうか。",
+          "expected_challenges": ["Honorific language", "Formal business Japanese", "Appropriate prosody"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "medical",
+      "description": "医療 (Medical Domain)",
+      "tests": [
+        {
+          "test_id": "J5-M1",
+          "text": "患者は慢性閉塞性肺疾患の急性増悪を呈しており、サルブタモール吸入とプレドニゾロン経口投与を開始しました。",
+          "expected_challenges": ["Medical terminology", "Katakana drug names"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "loanwords",
+      "description": "外来語 (Mixed Script & Loanwords)",
+      "tests": [
+        {
+          "test_id": "J6-L1",
+          "text": "このアプリのUIをアップデートして、ユーザーエクスペリエンスを改善しましょう。",
+          "expected_challenges": ["Katakana loanwords", "Technical terminology"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "prosody_emotion",
+      "description": "感情表現 (Prosody & Emotion)",
+      "tests": [
+        {
+          "test_id": "J7-P1",
+          "text": "え、本当？やった！ついに受かったんだ！三年も頑張って... え、中止？嘘でしょ... 何て言えばいいか分からない。",
+          "expected_challenges": ["Emotional shifts", "Excitement to disappointment", "Natural conversational flow"],
+          "importance": "high"
+        }
+      ]
+    }
+  ]
+}

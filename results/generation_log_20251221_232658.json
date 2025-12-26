@@ -1,0 +1,155 @@
+{
+  "cartesia": [
+    {
+      "status": "skipped",
+      "test_id": "C1-P1",
+      "provider": "cartesia",
+      "category": "polyphones",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_C1-P1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "C2-N1",
+      "provider": "cartesia",
+      "category": "numbers_dates",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_C2-N1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "C3-T1",
+      "provider": "cartesia",
+      "category": "technical_financial",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_C3-T1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "C4-M1",
+      "provider": "cartesia",
+      "category": "medical",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_C4-M1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "C5-CS1",
+      "provider": "cartesia",
+      "category": "code_switching",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_C5-CS1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "C6-P1",
+      "provider": "cartesia",
+      "category": "prosody_tone",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_C6-P1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "C7-SF1",
+      "provider": "cartesia",
+      "category": "particles",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_C7-SF1.mp3"
+    }
+  ],
+  "elevenlabs": [
+    {
+      "status": "success",
+      "generation_time": 0.62156081199646,
+      "text_length": 20,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_C1-P1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "C1-P1",
+      "category": "polyphones",
+      "timestamp": "2025-12-21T23:26:46.894941"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.9625310897827148,
+      "text_length": 43,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_C2-N1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "C2-N1",
+      "category": "numbers_dates",
+      "timestamp": "2025-12-21T23:26:48.876917"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.9575929641723633,
+      "text_length": 43,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_C3-T1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "C3-T1",
+      "category": "technical_financial",
+      "timestamp": "2025-12-21T23:26:50.844018"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.9609041213989258,
+      "text_length": 38,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_C4-M1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "C4-M1",
+      "category": "medical",
+      "timestamp": "2025-12-21T23:26:52.813161"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.47031211853027344,
+      "text_length": 46,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_C5-CS1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "C5-CS1",
+      "category": "code_switching",
+      "timestamp": "2025-12-21T23:26:54.292440"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.6863858699798584,
+      "text_length": 55,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_C6-P1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "C6-P1",
+      "category": "prosody_tone",
+      "timestamp": "2025-12-21T23:26:55.986188"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.6683859825134277,
+      "text_length": 37,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_C7-SF1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "C7-SF1",
+      "category": "particles",
+      "timestamp": "2025-12-21T23:26:57.666621"
+    }
+  ],
+  "summary": {
+    "total_tests": 7,
+    "successful": 7,
+    "failed": 0,
+    "skipped": 7,
+    "start_time": "2025-12-21T23:26:45.753818",
+    "end_time": "2025-12-21T23:26:58.167980",
+    "success_rate": 0.5
+  }
+}

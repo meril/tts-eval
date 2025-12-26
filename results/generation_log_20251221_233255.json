@@ -1,0 +1,98 @@
+{
+  "cartesia": [],
+  "elevenlabs": [
+    {
+      "status": "success",
+      "generation_time": 0.5984020233154297,
+      "text_length": 23,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_J1-K1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "J1-K1",
+      "category": "kanji_readings",
+      "timestamp": "2025-12-21T23:32:47.321413"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.5302841663360596,
+      "text_length": 24,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_J2-N1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "J2-N1",
+      "category": "numbers_counters",
+      "timestamp": "2025-12-21T23:32:48.357209"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.3264579772949219,
+      "text_length": 10,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_J3-PA1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "J3-PA1",
+      "category": "pitch_accent",
+      "timestamp": "2025-12-21T23:32:49.192301"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.6916990280151367,
+      "text_length": 47,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_J4-R1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "J4-R1",
+      "category": "keigo_register",
+      "timestamp": "2025-12-21T23:32:50.389691"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.0428040027618408,
+      "text_length": 52,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_J5-M1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "J5-M1",
+      "category": "medical",
+      "timestamp": "2025-12-21T23:32:51.939658"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.721174955368042,
+      "text_length": 39,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_J6-L1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "J6-L1",
+      "category": "loanwords",
+      "timestamp": "2025-12-21T23:32:53.163866"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.8876848220825195,
+      "text_length": 57,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_J7-P1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "J7-P1",
+      "category": "prosody_emotion",
+      "timestamp": "2025-12-21T23:32:54.558531"
+    }
+  ],
+  "summary": {
+    "total_tests": 7,
+    "successful": 7,
+    "failed": 0,
+    "skipped": 0,
+    "start_time": "2025-12-21T23:32:46.706217",
+    "end_time": "2025-12-21T23:32:55.064058",
+    "success_rate": 1.0
+  }
+}

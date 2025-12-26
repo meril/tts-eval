@@ -1,0 +1,90 @@
+{
+  "language": "zh",
+  "language_name": "Mandarin Chinese",
+  "test_categories": [
+    {
+      "category": "polyphones",
+      "description": "多音字 (Polyphones)",
+      "tests": [
+        {
+          "test_id": "C1-P1",
+          "text": "他觉得这个音乐很好听，睡觉前都要听一遍。",
+          "expected_challenges": ["觉 (jué de vs jiào)", "Context-dependent pronunciation"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "numbers_dates",
+      "description": "Numbers, Dates & Formal Readings",
+      "tests": [
+        {
+          "test_id": "C2-N1",
+          "text": "请拨打客服电话：400-123-4567。营业时间：周一至周五 9:00-18:00。",
+          "expected_challenges": ["Phone number reading", "Time format", "Business context"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "technical_financial",
+      "description": "专业术语 (Technical & Financial)",
+      "tests": [
+        {
+          "test_id": "C3-T1",
+          "text": "该API接口支持RESTful架构，返回JSON格式数据。请参考SDK文档第3.2节。",
+          "expected_challenges": ["English technical terms", "Mixed language"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "medical",
+      "description": "医疗 (Medical Domain)",
+      "tests": [
+        {
+          "test_id": "C4-M1",
+          "text": "患者诊断为慢性阻塞性肺疾病急性加重期，给予沙丁胺醇雾化吸入及泼尼松口服治疗。",
+          "expected_challenges": ["Medical terminology", "Drug names"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "code_switching",
+      "description": "中英混合 (Code-Switching)",
+      "tests": [
+        {
+          "test_id": "C5-CS1",
+          "text": "这个project的deadline是下周五。请先完成PPT，然后跟team sync一下。",
+          "expected_challenges": ["Chinese-English mixing", "Natural flow"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "prosody_tone",
+      "description": "语调变化 (Prosody & Tone)",
+      "tests": [
+        {
+          "test_id": "C6-P1",
+          "text": "什么？你被录取了？太棒了！我就知道你可以的！等等...他们又说取消了？怎么会这样...我真的不知道该说什么了。",
+          "expected_challenges": ["Emotional shifts", "Question intonation", "Excitement to disappointment"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "particles",
+      "description": "语气词 (Sentence-Final Particles)",
+      "tests": [
+        {
+          "test_id": "C7-SF1",
+          "text": "你吃饭了吗？我吃过了。那我们走吧。好啊，走吧！等等，你确定吗？当然确定啦！",
+          "expected_challenges": ["Particle pronunciation", "Natural conversational flow"],
+          "importance": "high"
+        }
+      ]
+    }
+  ]
+}

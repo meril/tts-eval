@@ -1,0 +1,98 @@
+{
+  "cartesia": [
+    {
+      "status": "success",
+      "generation_time": 1.2557439804077148,
+      "text_length": 23,
+      "model_id": "sonic-3",
+      "voice_id": "59d4fd2f-f5eb-4410-8105-58db7661144f",
+      "file_path": "outputs/cartesia/cartesia_J1-K1.mp3",
+      "provider": "cartesia",
+      "test_id": "J1-K1",
+      "category": "kanji_readings",
+      "timestamp": "2025-12-21T23:09:37.514341"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.2932631969451904,
+      "text_length": 24,
+      "model_id": "sonic-3",
+      "voice_id": "59d4fd2f-f5eb-4410-8105-58db7661144f",
+      "file_path": "outputs/cartesia/cartesia_J2-N1.mp3",
+      "provider": "cartesia",
+      "test_id": "J2-N1",
+      "category": "numbers_counters",
+      "timestamp": "2025-12-21T23:09:39.313543"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.752439022064209,
+      "text_length": 10,
+      "model_id": "sonic-3",
+      "voice_id": "59d4fd2f-f5eb-4410-8105-58db7661144f",
+      "file_path": "outputs/cartesia/cartesia_J3-PA1.mp3",
+      "provider": "cartesia",
+      "test_id": "J3-PA1",
+      "category": "pitch_accent",
+      "timestamp": "2025-12-21T23:09:40.570582"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.500028133392334,
+      "text_length": 47,
+      "model_id": "sonic-3",
+      "voice_id": "59d4fd2f-f5eb-4410-8105-58db7661144f",
+      "file_path": "outputs/cartesia/cartesia_J4-R1.mp3",
+      "provider": "cartesia",
+      "test_id": "J4-R1",
+      "category": "keigo_register",
+      "timestamp": "2025-12-21T23:09:42.579345"
+    },
+    {
+      "status": "success",
+      "generation_time": 2.095679998397827,
+      "text_length": 52,
+      "model_id": "sonic-3",
+      "voice_id": "59d4fd2f-f5eb-4410-8105-58db7661144f",
+      "file_path": "outputs/cartesia/cartesia_J5-M1.mp3",
+      "provider": "cartesia",
+      "test_id": "J5-M1",
+      "category": "medical",
+      "timestamp": "2025-12-21T23:09:45.177436"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.3214950561523438,
+      "text_length": 39,
+      "model_id": "sonic-3",
+      "voice_id": "59d4fd2f-f5eb-4410-8105-58db7661144f",
+      "file_path": "outputs/cartesia/cartesia_J6-L1.mp3",
+      "provider": "cartesia",
+      "test_id": "J6-L1",
+      "category": "loanwords",
+      "timestamp": "2025-12-21T23:09:47.004661"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.921483039855957,
+      "text_length": 57,
+      "model_id": "sonic-3",
+      "voice_id": "59d4fd2f-f5eb-4410-8105-58db7661144f",
+      "file_path": "outputs/cartesia/cartesia_J7-P1.mp3",
+      "provider": "cartesia",
+      "test_id": "J7-P1",
+      "category": "prosody_emotion",
+      "timestamp": "2025-12-21T23:09:49.430590"
+    }
+  ],
+  "elevenlabs": [],
+  "summary": {
+    "total_tests": 7,
+    "successful": 7,
+    "failed": 0,
+    "skipped": 0,
+    "start_time": "2025-12-21T23:09:36.243429",
+    "end_time": "2025-12-21T23:09:49.936362",
+    "success_rate": 0.5
+  }
+}

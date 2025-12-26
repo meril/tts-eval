@@ -1,0 +1,98 @@
+{
+  "cartesia": [
+    {
+      "status": "success",
+      "generation_time": 1.1358652114868164,
+      "text_length": 20,
+      "model_id": "sonic-3",
+      "voice_id": "7a5d4663-88ae-47b7-808e-8f9b9ee4127b",
+      "file_path": "outputs/cartesia/cartesia_C1-P1.mp3",
+      "provider": "cartesia",
+      "test_id": "C1-P1",
+      "category": "polyphones",
+      "timestamp": "2025-12-21T23:09:15.225940"
+    },
+    {
+      "status": "success",
+      "generation_time": 2.1134390830993652,
+      "text_length": 43,
+      "model_id": "sonic-3",
+      "voice_id": "7a5d4663-88ae-47b7-808e-8f9b9ee4127b",
+      "file_path": "outputs/cartesia/cartesia_C2-N1.mp3",
+      "provider": "cartesia",
+      "test_id": "C2-N1",
+      "category": "numbers_dates",
+      "timestamp": "2025-12-21T23:09:17.847553"
+    },
+    {
+      "status": "success",
+      "generation_time": 2.0413239002227783,
+      "text_length": 43,
+      "model_id": "sonic-3",
+      "voice_id": "7a5d4663-88ae-47b7-808e-8f9b9ee4127b",
+      "file_path": "outputs/cartesia/cartesia_C3-T1.mp3",
+      "provider": "cartesia",
+      "test_id": "C3-T1",
+      "category": "technical_financial",
+      "timestamp": "2025-12-21T23:09:20.397351"
+    },
+    {
+      "status": "success",
+      "generation_time": 2.022562026977539,
+      "text_length": 38,
+      "model_id": "sonic-3",
+      "voice_id": "7a5d4663-88ae-47b7-808e-8f9b9ee4127b",
+      "file_path": "outputs/cartesia/cartesia_C4-M1.mp3",
+      "provider": "cartesia",
+      "test_id": "C4-M1",
+      "category": "medical",
+      "timestamp": "2025-12-21T23:09:22.926510"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.635617971420288,
+      "text_length": 46,
+      "model_id": "sonic-3",
+      "voice_id": "7a5d4663-88ae-47b7-808e-8f9b9ee4127b",
+      "file_path": "outputs/cartesia/cartesia_C5-CS1.mp3",
+      "provider": "cartesia",
+      "test_id": "C5-CS1",
+      "category": "code_switching",
+      "timestamp": "2025-12-21T23:09:25.069082"
+    },
+    {
+      "status": "success",
+      "generation_time": 3.0670928955078125,
+      "text_length": 55,
+      "model_id": "sonic-3",
+      "voice_id": "7a5d4663-88ae-47b7-808e-8f9b9ee4127b",
+      "file_path": "outputs/cartesia/cartesia_C6-P1.mp3",
+      "provider": "cartesia",
+      "test_id": "C6-P1",
+      "category": "prosody_tone",
+      "timestamp": "2025-12-21T23:09:28.644404"
+    },
+    {
+      "status": "success",
+      "generation_time": 2.3978049755096436,
+      "text_length": 37,
+      "model_id": "sonic-3",
+      "voice_id": "7a5d4663-88ae-47b7-808e-8f9b9ee4127b",
+      "file_path": "outputs/cartesia/cartesia_C7-SF1.mp3",
+      "provider": "cartesia",
+      "test_id": "C7-SF1",
+      "category": "particles",
+      "timestamp": "2025-12-21T23:09:31.544514"
+    }
+  ],
+  "elevenlabs": [],
+  "summary": {
+    "total_tests": 7,
+    "successful": 7,
+    "failed": 0,
+    "skipped": 0,
+    "start_time": "2025-12-21T23:09:14.075218",
+    "end_time": "2025-12-21T23:09:32.047453",
+    "success_rate": 0.5
+  }
+}

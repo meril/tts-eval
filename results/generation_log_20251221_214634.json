@@ -1,0 +1,559 @@
+{
+  "cartesia": [
+    {
+      "status": "skipped",
+      "test_id": "E1-H1",
+      "provider": "cartesia",
+      "category": "heteronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_E1-H1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E1-H2",
+      "provider": "cartesia",
+      "category": "heteronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_E1-H2.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E1-H3",
+      "provider": "cartesia",
+      "category": "heteronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_E1-H3.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E1-H4",
+      "provider": "cartesia",
+      "category": "heteronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_E1-H4.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E1-H5",
+      "provider": "cartesia",
+      "category": "heteronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_E1-H5.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E2-N1",
+      "provider": "cartesia",
+      "category": "numbers_dates",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_E2-N1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E2-N2",
+      "provider": "cartesia",
+      "category": "numbers_dates",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_E2-N2.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E2-N3",
+      "provider": "cartesia",
+      "category": "numbers_dates",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_E2-N3.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E2-N4",
+      "provider": "cartesia",
+      "category": "numbers_dates",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_E2-N4.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E2-N5",
+      "provider": "cartesia",
+      "category": "numbers_dates",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_E2-N5.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E3-A1",
+      "provider": "cartesia",
+      "category": "acronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_E3-A1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E3-A2",
+      "provider": "cartesia",
+      "category": "acronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_E3-A2.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E3-A3",
+      "provider": "cartesia",
+      "category": "acronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_E3-A3.mp3"
+    },
+    {
+      "status": "success",
+      "generation_time": 2.033921003341675,
+      "text_length": 84,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E3-A4.mp3",
+      "provider": "cartesia",
+      "test_id": "E3-A4",
+      "category": "acronyms",
+      "timestamp": "2025-12-21T21:45:30.529188"
+    },
+    {
+      "status": "success",
+      "generation_time": 2.11936092376709,
+      "text_length": 154,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E4-M1.mp3",
+      "provider": "cartesia",
+      "test_id": "E4-M1",
+      "category": "medical",
+      "timestamp": "2025-12-21T21:45:34.232041"
+    },
+    {
+      "status": "success",
+      "generation_time": 2.4937570095062256,
+      "text_length": 138,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E4-M2.mp3",
+      "provider": "cartesia",
+      "test_id": "E4-M2",
+      "category": "medical",
+      "timestamp": "2025-12-21T21:45:38.435806"
+    },
+    {
+      "status": "success",
+      "generation_time": 2.302356004714966,
+      "text_length": 104,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E4-M3.mp3",
+      "provider": "cartesia",
+      "test_id": "E4-M3",
+      "category": "medical",
+      "timestamp": "2025-12-21T21:45:42.411497"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.9177348613739014,
+      "text_length": 141,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E4-M4.mp3",
+      "provider": "cartesia",
+      "test_id": "E4-M4",
+      "category": "medical",
+      "timestamp": "2025-12-21T21:45:45.918573"
+    },
+    {
+      "status": "success",
+      "generation_time": 4.379657030105591,
+      "text_length": 111,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E5-F1.mp3",
+      "provider": "cartesia",
+      "test_id": "E5-F1",
+      "category": "financial",
+      "timestamp": "2025-12-21T21:45:51.863967"
+    },
+    {
+      "status": "success",
+      "generation_time": 2.331366777420044,
+      "text_length": 94,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E5-F2.mp3",
+      "provider": "cartesia",
+      "test_id": "E5-F2",
+      "category": "financial",
+      "timestamp": "2025-12-21T21:45:55.883907"
+    },
+    {
+      "status": "success",
+      "generation_time": 4.120301008224487,
+      "text_length": 114,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E5-F3.mp3",
+      "provider": "cartesia",
+      "test_id": "E5-F3",
+      "category": "financial",
+      "timestamp": "2025-12-21T21:46:01.769994"
+    },
+    {
+      "status": "success",
+      "generation_time": 4.591346979141235,
+      "text_length": 370,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E6-P1.mp3",
+      "provider": "cartesia",
+      "test_id": "E6-P1",
+      "category": "prosody_longform",
+      "timestamp": "2025-12-21T21:46:08.299452"
+    },
+    {
+      "status": "success",
+      "generation_time": 5.053146839141846,
+      "text_length": 378,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E6-P2.mp3",
+      "provider": "cartesia",
+      "test_id": "E6-P2",
+      "category": "prosody_longform",
+      "timestamp": "2025-12-21T21:46:15.616362"
+    },
+    {
+      "status": "success",
+      "generation_time": 4.2728400230407715,
+      "text_length": 232,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E6-P3.mp3",
+      "provider": "cartesia",
+      "test_id": "E6-P3",
+      "category": "prosody_longform",
+      "timestamp": "2025-12-21T21:46:22.135558"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.6379897594451904,
+      "text_length": 106,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E7-E1.mp3",
+      "provider": "cartesia",
+      "test_id": "E7-E1",
+      "category": "edge_cases",
+      "timestamp": "2025-12-21T21:46:25.614622"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.6130719184875488,
+      "text_length": 114,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E7-E2.mp3",
+      "provider": "cartesia",
+      "test_id": "E7-E2",
+      "category": "edge_cases",
+      "timestamp": "2025-12-21T21:46:28.756615"
+    },
+    {
+      "status": "success",
+      "generation_time": 2.562609910964966,
+      "text_length": 126,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E7-E3.mp3",
+      "provider": "cartesia",
+      "test_id": "E7-E3",
+      "category": "edge_cases",
+      "timestamp": "2025-12-21T21:46:32.846024"
+    }
+  ],
+  "elevenlabs": [
+    {
+      "status": "skipped",
+      "test_id": "E1-H1",
+      "provider": "elevenlabs",
+      "category": "heteronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/elevenlabs/elevenlabs_E1-H1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E1-H2",
+      "provider": "elevenlabs",
+      "category": "heteronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/elevenlabs/elevenlabs_E1-H2.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E1-H3",
+      "provider": "elevenlabs",
+      "category": "heteronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/elevenlabs/elevenlabs_E1-H3.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E1-H4",
+      "provider": "elevenlabs",
+      "category": "heteronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/elevenlabs/elevenlabs_E1-H4.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E1-H5",
+      "provider": "elevenlabs",
+      "category": "heteronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/elevenlabs/elevenlabs_E1-H5.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E2-N1",
+      "provider": "elevenlabs",
+      "category": "numbers_dates",
+      "reason": "file already exists",
+      "file_path": "outputs/elevenlabs/elevenlabs_E2-N1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E2-N2",
+      "provider": "elevenlabs",
+      "category": "numbers_dates",
+      "reason": "file already exists",
+      "file_path": "outputs/elevenlabs/elevenlabs_E2-N2.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E2-N3",
+      "provider": "elevenlabs",
+      "category": "numbers_dates",
+      "reason": "file already exists",
+      "file_path": "outputs/elevenlabs/elevenlabs_E2-N3.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E2-N4",
+      "provider": "elevenlabs",
+      "category": "numbers_dates",
+      "reason": "file already exists",
+      "file_path": "outputs/elevenlabs/elevenlabs_E2-N4.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E2-N5",
+      "provider": "elevenlabs",
+      "category": "numbers_dates",
+      "reason": "file already exists",
+      "file_path": "outputs/elevenlabs/elevenlabs_E2-N5.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E3-A1",
+      "provider": "elevenlabs",
+      "category": "acronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/elevenlabs/elevenlabs_E3-A1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E3-A2",
+      "provider": "elevenlabs",
+      "category": "acronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/elevenlabs/elevenlabs_E3-A2.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "E3-A3",
+      "provider": "elevenlabs",
+      "category": "acronyms",
+      "reason": "file already exists",
+      "file_path": "outputs/elevenlabs/elevenlabs_E3-A3.mp3"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.5719058513641357,
+      "text_length": 84,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E3-A4.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E3-A4",
+      "category": "acronyms",
+      "timestamp": "2025-12-21T21:45:31.605242"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.6959688663482666,
+      "text_length": 154,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E4-M1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E4-M1",
+      "category": "medical",
+      "timestamp": "2025-12-21T21:45:35.434470"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.6418590545654297,
+      "text_length": 138,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E4-M2.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E4-M2",
+      "category": "medical",
+      "timestamp": "2025-12-21T21:45:39.583170"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.5743980407714844,
+      "text_length": 104,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E4-M3.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E4-M3",
+      "category": "medical",
+      "timestamp": "2025-12-21T21:45:43.492697"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.5501139163970947,
+      "text_length": 141,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E4-M4.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E4-M4",
+      "category": "medical",
+      "timestamp": "2025-12-21T21:45:46.975349"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.6793363094329834,
+      "text_length": 111,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E5-F1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E5-F1",
+      "category": "financial",
+      "timestamp": "2025-12-21T21:45:53.045721"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.7497968673706055,
+      "text_length": 94,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E5-F2.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E5-F2",
+      "category": "financial",
+      "timestamp": "2025-12-21T21:45:57.141672"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.9228880405426025,
+      "text_length": 114,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E5-F3.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E5-F3",
+      "category": "financial",
+      "timestamp": "2025-12-21T21:46:03.199782"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.2511589527130127,
+      "text_length": 370,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E6-P1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E6-P1",
+      "category": "prosody_longform",
+      "timestamp": "2025-12-21T21:46:10.058350"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.2290067672729492,
+      "text_length": 378,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E6-P2.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E6-P2",
+      "category": "prosody_longform",
+      "timestamp": "2025-12-21T21:46:17.353905"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.8309998512268066,
+      "text_length": 232,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E6-P3.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E6-P3",
+      "category": "prosody_longform",
+      "timestamp": "2025-12-21T21:46:23.471050"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.5170631408691406,
+      "text_length": 106,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E7-E1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E7-E1",
+      "category": "edge_cases",
+      "timestamp": "2025-12-21T21:46:26.634125"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.5127801895141602,
+      "text_length": 114,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E7-E2.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E7-E2",
+      "category": "edge_cases",
+      "timestamp": "2025-12-21T21:46:29.775458"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.6198990345001221,
+      "text_length": 126,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E7-E3.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E7-E3",
+      "category": "edge_cases",
+      "timestamp": "2025-12-21T21:46:33.970448"
+    }
+  ],
+  "summary": {
+    "total_tests": 27,
+    "successful": 28,
+    "failed": 0,
+    "skipped": 26,
+    "start_time": "2025-12-21T21:45:15.370357",
+    "end_time": "2025-12-21T21:46:34.476637",
+    "success_rate": 0.5185185185185185
+  }
+}

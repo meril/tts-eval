@@ -1,0 +1,155 @@
+{
+  "cartesia": [
+    {
+      "status": "skipped",
+      "test_id": "D1-K1",
+      "provider": "cartesia",
+      "category": "compound_words",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_D1-K1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "D2-N1",
+      "provider": "cartesia",
+      "category": "numbers_currency",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_D2-N1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "D3-F1",
+      "provider": "cartesia",
+      "category": "code_switching",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_D3-F1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "D4-M1",
+      "provider": "cartesia",
+      "category": "medical",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_D4-M1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "D5-U1",
+      "provider": "cartesia",
+      "category": "umlauts",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_D5-U1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "D6-R1",
+      "provider": "cartesia",
+      "category": "register",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_D6-R1.mp3"
+    },
+    {
+      "status": "skipped",
+      "test_id": "D7-P1",
+      "provider": "cartesia",
+      "category": "prosody_emotion",
+      "reason": "file already exists",
+      "file_path": "outputs/cartesia/cartesia_D7-P1.mp3"
+    }
+  ],
+  "elevenlabs": [
+    {
+      "status": "success",
+      "generation_time": 0.7353849411010742,
+      "text_length": 139,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_D1-K1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "D1-K1",
+      "category": "compound_words",
+      "timestamp": "2025-12-21T23:26:26.508877"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.8596091270446777,
+      "text_length": 121,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_D2-N1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "D2-N1",
+      "category": "numbers_currency",
+      "timestamp": "2025-12-21T23:26:28.379373"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.0821008682250977,
+      "text_length": 115,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_D3-F1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "D3-F1",
+      "category": "code_switching",
+      "timestamp": "2025-12-21T23:26:30.473005"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.1377630233764648,
+      "text_length": 149,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_D4-M1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "D4-M1",
+      "category": "medical",
+      "timestamp": "2025-12-21T23:26:32.634990"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.6446478366851807,
+      "text_length": 100,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_D5-U1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "D5-U1",
+      "category": "umlauts",
+      "timestamp": "2025-12-21T23:26:34.291451"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.7970120906829834,
+      "text_length": 182,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_D6-R1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "D6-R1",
+      "category": "register",
+      "timestamp": "2025-12-21T23:26:36.099820"
+    },
+    {
+      "status": "success",
+      "generation_time": 0.7892661094665527,
+      "text_length": 168,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_D7-P1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "D7-P1",
+      "category": "prosody_emotion",
+      "timestamp": "2025-12-21T23:26:37.900693"
+    }
+  ],
+  "summary": {
+    "total_tests": 7,
+    "successful": 7,
+    "failed": 0,
+    "skipped": 7,
+    "start_time": "2025-12-21T23:26:25.248446",
+    "end_time": "2025-12-21T23:26:38.405578",
+    "success_rate": 0.5
+  }
+}

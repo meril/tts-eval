@@ -1,0 +1,98 @@
+{
+  "cartesia": [
+    {
+      "status": "success",
+      "generation_time": 1.7083890438079834,
+      "text_length": 139,
+      "model_id": "sonic-3",
+      "voice_id": "38aabb6a-f52b-4fb0-a3d1-988518f4dc06",
+      "file_path": "outputs/cartesia/cartesia_D1-K1.mp3",
+      "provider": "cartesia",
+      "test_id": "D1-K1",
+      "category": "compound_words",
+      "timestamp": "2025-12-21T23:08:50.560951"
+    },
+    {
+      "status": "success",
+      "generation_time": 4.357265949249268,
+      "text_length": 121,
+      "model_id": "sonic-3",
+      "voice_id": "38aabb6a-f52b-4fb0-a3d1-988518f4dc06",
+      "file_path": "outputs/cartesia/cartesia_D2-N1.mp3",
+      "provider": "cartesia",
+      "test_id": "D2-N1",
+      "category": "numbers_currency",
+      "timestamp": "2025-12-21T23:08:55.426780"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.7479150295257568,
+      "text_length": 115,
+      "model_id": "sonic-3",
+      "voice_id": "38aabb6a-f52b-4fb0-a3d1-988518f4dc06",
+      "file_path": "outputs/cartesia/cartesia_D3-F1.mp3",
+      "provider": "cartesia",
+      "test_id": "D3-F1",
+      "category": "code_switching",
+      "timestamp": "2025-12-21T23:08:57.682545"
+    },
+    {
+      "status": "success",
+      "generation_time": 2.3501288890838623,
+      "text_length": 149,
+      "model_id": "sonic-3",
+      "voice_id": "38aabb6a-f52b-4fb0-a3d1-988518f4dc06",
+      "file_path": "outputs/cartesia/cartesia_D4-M1.mp3",
+      "provider": "cartesia",
+      "test_id": "D4-M1",
+      "category": "medical",
+      "timestamp": "2025-12-21T23:09:00.539352"
+    },
+    {
+      "status": "success",
+      "generation_time": 1.5464041233062744,
+      "text_length": 100,
+      "model_id": "sonic-3",
+      "voice_id": "38aabb6a-f52b-4fb0-a3d1-988518f4dc06",
+      "file_path": "outputs/cartesia/cartesia_D5-U1.mp3",
+      "provider": "cartesia",
+      "test_id": "D5-U1",
+      "category": "umlauts",
+      "timestamp": "2025-12-21T23:09:02.593147"
+    },
+    {
+      "status": "success",
+      "generation_time": 2.5772762298583984,
+      "text_length": 182,
+      "model_id": "sonic-3",
+      "voice_id": "38aabb6a-f52b-4fb0-a3d1-988518f4dc06",
+      "file_path": "outputs/cartesia/cartesia_D6-R1.mp3",
+      "provider": "cartesia",
+      "test_id": "D6-R1",
+      "category": "register",
+      "timestamp": "2025-12-21T23:09:05.676598"
+    },
+    {
+      "status": "success",
+      "generation_time": 2.7634167671203613,
+      "text_length": 168,
+      "model_id": "sonic-3",
+      "voice_id": "38aabb6a-f52b-4fb0-a3d1-988518f4dc06",
+      "file_path": "outputs/cartesia/cartesia_D7-P1.mp3",
+      "provider": "cartesia",
+      "test_id": "D7-P1",
+      "category": "prosody_emotion",
+      "timestamp": "2025-12-21T23:09:08.947969"
+    }
+  ],
+  "elevenlabs": [],
+  "summary": {
+    "total_tests": 7,
+    "successful": 7,
+    "failed": 0,
+    "skipped": 0,
+    "start_time": "2025-12-21T23:08:48.836345",
+    "end_time": "2025-12-21T23:09:09.449266",
+    "success_rate": 0.5
+  }
+}

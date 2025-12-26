@@ -1,0 +1,212 @@
+{
+  "language": "en",
+  "language_name": "English",
+  "test_categories": [
+    {
+      "category": "heteronyms",
+      "description": "Context-Dependent Pronunciation",
+      "tests": [
+        {
+          "test_id": "E1-H1",
+          "text": "The lead singer asked the guitarist to lead the band onto the stage.",
+          "expected_challenges": ["lead (metal) vs lead (guide)"],
+          "importance": "high"
+        },
+        {
+          "test_id": "E1-H2",
+          "text": "I read that she will read the contract tomorrow, but I suspect she already read the summary.",
+          "expected_challenges": ["read (past) vs read (present/future)"],
+          "importance": "high"
+        },
+        {
+          "test_id": "E1-H3",
+          "text": "The bass player caught a bass while the drummer wound the fishing line around his wound.",
+          "expected_challenges": ["bass (instrument) vs bass (fish)", "wound (verb) vs wound (noun)"],
+          "importance": "high"
+        },
+        {
+          "test_id": "E1-H4",
+          "text": "After a minute examination of the minute details, the researcher began to tear up, though she refused to tear the document.",
+          "expected_challenges": ["minute (small) vs minute (time)", "tear (cry) vs tear (rip)"],
+          "importance": "high"
+        },
+        {
+          "test_id": "E1-H5",
+          "text": "The Polish man used polish to clean the shoes, then dove into the water where a dove was flying overhead.",
+          "expected_challenges": ["Polish (nationality) vs polish (shine)", "dove (bird) vs dove (past tense of dive)"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "numbers_dates",
+      "description": "Numbers, Dates & Formatting Ambiguity",
+      "tests": [
+        {
+          "test_id": "E2-N1",
+          "text": "Call me at 555-123-4567 regarding invoice #4567 for $4,567.00 dated 4/5/67.",
+          "expected_challenges": ["phone number reading", "invoice number", "currency", "date ambiguity"],
+          "importance": "high"
+        },
+        {
+          "test_id": "E2-N2",
+          "text": "The patient's BP was 120/80, with O2 sats at 98%. See section 3.2.1 for the 3:21 PM reading.",
+          "expected_challenges": ["medical abbreviations", "ratios", "percentages", "time", "section numbering"],
+          "importance": "high"
+        },
+        {
+          "test_id": "E2-N3",
+          "text": "Revenue grew 3.5x YoY to $1.2B in Q3 '24, with EBITDA margins of 23.5% (+350bps).",
+          "expected_challenges": ["multipliers", "business abbreviations", "billions", "percentages", "basis points"],
+          "importance": "high"
+        },
+        {
+          "test_id": "E2-N4",
+          "text": "Mix 1½ cups flour with 2¼ tsp salt. Bake at 350°F for 45-50 min.",
+          "expected_challenges": ["fractions", "measurements", "temperature", "time ranges"],
+          "importance": "medium"
+        },
+        {
+          "test_id": "E2-N5",
+          "text": "Version 2.0.1 requires iOS 15+ or Android 12+. Download size: 847MB.",
+          "expected_challenges": ["version numbers", "technical specs", "file sizes"],
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "category": "acronyms",
+      "description": "Acronyms & Abbreviations",
+      "tests": [
+        {
+          "test_id": "E3-A1",
+          "text": "The CEO met with the FDA re: the NDA for our NSAID. FYI, the ETA is EOD.",
+          "expected_challenges": ["business acronyms", "medical acronyms", "abbreviations"],
+          "importance": "high"
+        },
+        {
+          "test_id": "E3-A2",
+          "text": "Dr. Smith, MD, PhD, reviewed the patient's ECG, CBC, and BMP results at 3pm vs. the 9am labs.",
+          "expected_challenges": ["titles", "medical acronyms", "time comparisons"],
+          "importance": "high"
+        },
+        {
+          "test_id": "E3-A3",
+          "text": "The SaaS company's ARR reached $50M. Their CAC:LTV ratio is 1:3, and NPS hit 72.",
+          "expected_challenges": ["tech/business acronyms", "ratios"],
+          "importance": "medium"
+        },
+        {
+          "test_id": "E3-A4",
+          "text": "Per the WHO guidelines, patients with COPD and CHF should avoid NSAIDs. Rx: 40mg QD.",
+          "expected_challenges": ["medical organizations", "diseases", "prescriptions"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "medical",
+      "description": "Medical Domain",
+      "tests": [
+        {
+          "test_id": "E4-M1",
+          "text": "The patient presented with acute exacerbation of chronic obstructive pulmonary disease, requiring nebulized ipratropium bromide and oral prednisone taper.",
+          "expected_challenges": ["complex medical terminology", "drug names"],
+          "importance": "high"
+        },
+        {
+          "test_id": "E4-M2",
+          "text": "Differential diagnosis includes: pneumocystis jirovecii pneumonia, cytomegalovirus pneumonitis, and mycobacterium avium complex infection.",
+          "expected_challenges": ["medical terminology", "scientific names"],
+          "importance": "high"
+        },
+        {
+          "test_id": "E4-M3",
+          "text": "Start adalimumab 40mg SC q2wk. If inadequate response, consider switching to ustekinumab or vedolizumab.",
+          "expected_challenges": ["drug names", "medical abbreviations", "dosing instructions"],
+          "importance": "high"
+        },
+        {
+          "test_id": "E4-M4",
+          "text": "I'm sorry to tell you that the biopsy results show adenocarcinoma. We caught it early, and I want to walk you through your treatment options.",
+          "expected_challenges": ["empathetic delivery", "medical terminology", "emotional tone"],
+          "importance": "critical",
+          "requires_empathy": true
+        }
+      ]
+    },
+    {
+      "category": "financial",
+      "description": "Financial Domain",
+      "tests": [
+        {
+          "test_id": "E5-F1",
+          "text": "AAPL closed at $187.32, down 2.3% on 45M shares. The 50-DMA crossed below the 200-DMA, signaling a death cross.",
+          "expected_challenges": ["stock symbols", "financial terminology", "technical indicators"],
+          "importance": "medium"
+        },
+        {
+          "test_id": "E5-F2",
+          "text": "The LBO was structured with 6x leverage: 4x senior secured at SOFR+425bps, 2x mezz at 12% PIK.",
+          "expected_challenges": ["financial jargon", "abbreviations", "technical terms"],
+          "importance": "medium"
+        },
+        {
+          "test_id": "E5-F3",
+          "text": "Q3 results: Revenue $847M (+12% YoY), Adj. EBITDA $156M (18.4% margin), FCF $89M. Raised FY guidance to $3.2-3.4B.",
+          "expected_challenges": ["financial metrics", "abbreviations", "ranges"],
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "category": "prosody_longform",
+      "description": "Prosody & Long-Form (Test Naturalness Over Time)",
+      "tests": [
+        {
+          "test_id": "E6-P1",
+          "text": "The morning sun cast long shadows across the empty street. Sarah hesitated at the corner, her heart pounding. She had waited three years for this moment — three years of planning, of doubt, of quiet determination. Now, standing here, she wasn't sure if she felt brave or terrified. Perhaps both. She took a breath, adjusted her bag, and stepped forward into the unknown.",
+          "expected_challenges": ["narrative flow", "emotional progression", "pacing", "naturalness over time"],
+          "importance": "critical"
+        },
+        {
+          "test_id": "E6-P2",
+          "text": "Machine learning models learn patterns from data through a process called training. During training, the model makes predictions, compares them to the correct answers, and adjusts its internal parameters to reduce errors. This cycle repeats millions of times. The key challenge isn't just accuracy on training data — it's generalization: performing well on new, unseen examples.",
+          "expected_challenges": ["technical explanation", "clear enunciation", "educational tone"],
+          "importance": "high"
+        },
+        {
+          "test_id": "E6-P3",
+          "text": "Wait, what? You got the job? Oh my god, that's amazing! I knew you could do it. Honestly, I was a little worried after what happened last time, but... no, forget that. This is YOUR moment. We need to celebrate. Are you free tonight?",
+          "expected_challenges": ["emotional shifts", "conversational tone", "excitement to reflection", "emphasis"],
+          "importance": "critical",
+          "requires_emotion": true
+        }
+      ]
+    },
+    {
+      "category": "edge_cases",
+      "description": "Edge Cases & Stress Tests",
+      "tests": [
+        {
+          "test_id": "E7-E1",
+          "text": "The new café on Königstraße serves amazing crème brûlée. Their pièce de résistance is the matcha tiramisu.",
+          "expected_challenges": ["foreign words in English context", "mixed languages", "pronunciation"],
+          "importance": "medium"
+        },
+        {
+          "test_id": "E7-E2",
+          "text": "The manager said, 'This is absolutely unacceptable,' but then added quietly, 'though I understand why you did it.'",
+          "expected_challenges": ["quoted speech", "tone shifts", "volume variation"],
+          "importance": "high"
+        },
+        {
+          "test_id": "E7-E3",
+          "text": "Please bring: 1) your passport, 2) Dr. Martinez's referral letter, 3) the $50 co-pay, and 4) form W-9 or W-8BEN if applicable.",
+          "expected_challenges": ["lists", "mixed content types", "form numbers"],
+          "importance": "medium"
+        }
+      ]
+    }
+  ]
+}

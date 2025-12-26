@@ -1,0 +1,1520 @@
+[
+  {
+    "test_id": "E1-H1",
+    "text": "The lead singer asked the guitarist to lead the band onto the stage.",
+    "category": "heteronyms",
+    "timestamp": "2025-12-21T21:54:52.743858",
+    "latency": {
+      "cartesia": "1.41s \u23f1\ufe0f",
+      "elevenlabs": "0.44s \u2705",
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 5,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 4,
+      "consistency": 3,
+      "average_score": 3.6,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 5,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.4,
+      "notes": "Sounded more British? Had a weird hiccup / breath at the end of the sentence"
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": "Cartesia didn't have the weird breath at the end, slight edge"
+    }
+  },
+  {
+    "test_id": "E1-H2",
+    "text": "I read that she will read the contract tomorrow, but I suspect she already read the summary.",
+    "category": "heteronyms",
+    "timestamp": "2025-12-21T22:02:21.159456",
+    "latency": {
+      "cartesia": "1.29s",
+      "elevenlabs": "N/A",
+      "faster": "cartesia"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 5,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 4,
+      "consistency": 3,
+      "average_score": 3.6,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 5,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.4,
+      "notes": "Sounded like a robot "
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": ""
+    }
+  },
+  {
+    "test_id": "E1-H3",
+    "text": "The bass player caught a bass while the drummer wound the fishing line around his wound.",
+    "category": "heteronyms",
+    "timestamp": "2025-12-21T22:11:35.835175",
+    "latency": {
+      "cartesia": "N/A",
+      "elevenlabs": "N/A",
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 4,
+      "emotional_appropriateness": 3,
+      "naturalness": 4,
+      "consistency": 3,
+      "average_score": 3.4,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 4,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.2,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Eleven Labs",
+      "notes": "Both of them got the second bass wrong, but Eleven Labs got the wound pronunciation right"
+    }
+  },
+  {
+    "test_id": "E1-H4",
+    "text": "After a minute examination of the minute details, the researcher began to tear up, though she refused to tear the document.",
+    "category": "heteronyms",
+    "timestamp": "2025-12-21T22:13:04.599291",
+    "latency": {
+      "cartesia": "N/A",
+      "elevenlabs": "N/A",
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": "Both minute and tear were wrong!"
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 5,
+      "prosody": 4,
+      "emotional_appropriateness": 4,
+      "naturalness": 4,
+      "consistency": 3,
+      "average_score": 4.0,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Eleven Labs",
+      "notes": ""
+    }
+  },
+  {
+    "test_id": "E1-H5",
+    "text": "The Polish man used polish to clean the shoes, then dove into the water where a dove was flying overhead.",
+    "category": "heteronyms",
+    "timestamp": "2025-12-21T22:15:33.338699",
+    "latency": {
+      "cartesia": "N/A",
+      "elevenlabs": "N/A",
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 5,
+      "prosody": 4,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.6,
+      "notes": "All pronunciation were right, but a bit unsure if it was really more natural sounding"
+    },
+    "comparison": {
+      "winner": "Eleven Labs",
+      "notes": ""
+    }
+  },
+  {
+    "test_id": "E2-N1",
+    "text": "Call me at 555-123-4567 regarding invoice #4567 for $4,567.00 dated 4/5/67.",
+    "category": "numbers_dates",
+    "timestamp": "2025-12-21T22:18:43.887136",
+    "latency": {
+      "cartesia": "N/A",
+      "elevenlabs": "N/A",
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 2,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.6,
+      "notes": "phone number reading had weird gap in in speed, invoice number was pronounced wrong, "
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 2,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 2,
+      "average_score": 2.4,
+      "notes": "Really weird speed, pronounced \"num\" wrong, dollar not emphasized."
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": "slight win for Cartesia, but it was a bit weird. both of them weren't good"
+    }
+  },
+  {
+    "test_id": "E2-N2",
+    "text": "The patient's BP was 120/80, with O2 sats at 98%. See section 3.2.1 for the 3:21 PM reading.",
+    "category": "numbers_dates",
+    "timestamp": "2025-12-21T22:21:08.635460",
+    "latency": {
+      "cartesia": "N/A",
+      "elevenlabs": "N/A",
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 2,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.6,
+      "notes": "BP was pronounced wrong, 3.2.1 also pronounced wrong. weird speed gap"
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 4,
+      "prosody": 4,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.4,
+      "notes": "3"
+    },
+    "comparison": {
+      "winner": "Eleven Labs",
+      "notes": "I still don't think eleven labs was really much better, it sounded more robotic."
+    }
+  },
+  {
+    "test_id": "E2-N3",
+    "text": "Revenue grew 3.5x YoY to $1.2B in Q3 '24, with EBITDA margins of 23.5% (+350bps).",
+    "category": "numbers_dates",
+    "timestamp": "2025-12-21T22:24:47.708148",
+    "latency": {
+      "cartesia": "N/A",
+      "elevenlabs": "N/A",
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": "YoY was wrong, bps was wrong"
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": "YoY was wrong, EBITA was worse, bps was wrong"
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "Both quite bad"
+    }
+  },
+  {
+    "test_id": "E2-N4",
+    "text": "Mix 1\u00bd cups flour with 2\u00bc tsp salt. Bake at 350\u00b0F for 45-50 min.",
+    "category": "numbers_dates",
+    "timestamp": "2025-12-21T22:26:42.109609",
+    "latency": {
+      "cartesia": "N/A",
+      "elevenlabs": "N/A",
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 2,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 4,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": "Weird waiting in-between two sentences, tsp was wrong"
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 2,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 2,
+      "average_score": 2.4,
+      "notes": "Sounded more robotic, tsp wrong, minute was wrong? "
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "both pretty bad"
+    }
+  },
+  {
+    "test_id": "E2-N5",
+    "text": "Version 2.0.1 requires iOS 15+ or Android 12+. Download size: 847MB.",
+    "category": "numbers_dates",
+    "timestamp": "2025-12-21T22:36:15.305079",
+    "latency": {
+      "cartesia": "N/A",
+      "elevenlabs": "N/A",
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": "Version 2.0.1 was pronounced weirdly "
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 2,
+      "average_score": 2.6,
+      "notes": "MB was werird "
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "Both kinda bad."
+    }
+  },
+  {
+    "test_id": "E3-A2",
+    "text": "Dr. Smith, MD, PhD, reviewed the patient's ECG, CBC, and BMP results at 3pm vs. the 9am labs.",
+    "category": "acronyms",
+    "timestamp": "2025-12-21T22:43:23.189458",
+    "latency": {
+      "cartesia": null,
+      "elevenlabs": null,
+      "faster": null
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 4,
+      "consistency": 3,
+      "average_score": 3.2,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 4,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.2,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Eleven Labs",
+      "notes": "I find the speed and rhythm a bit better with 11labs, but I don't think it sounded very natural"
+    }
+  },
+  {
+    "test_id": "E3-A1",
+    "text": "The CEO met with the FDA re: the NDA for our NSAID. FYI, the ETA is EOD.",
+    "category": "acronyms",
+    "timestamp": "2025-12-21T22:46:57.216931",
+    "latency": {
+      "cartesia": null,
+      "elevenlabs": null,
+      "faster": null
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": "re: was wrong, NSAID was wrong"
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 4,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": "Less human sounding, NSAID was right"
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "both not great"
+    }
+  },
+  {
+    "test_id": "E3-A3",
+    "text": "The SaaS company's ARR reached $50M. Their CAC:LTV ratio is 1:3, and NPS hit 72.",
+    "category": "acronyms",
+    "timestamp": "2025-12-21T22:47:53.069414",
+    "latency": {
+      "cartesia": null,
+      "elevenlabs": null,
+      "faster": null
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 4,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.2,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 2,
+      "average_score": 2.6,
+      "notes": "weird performance at the end, sounded overall less human"
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "Both not great, Cartesia sounded more human."
+    }
+  },
+  {
+    "test_id": "E3-A4",
+    "text": "Per the WHO guidelines, patients with COPD and CHF should avoid NSAIDs. Rx: 40mg QD.",
+    "category": "acronyms",
+    "timestamp": "2025-12-21T22:51:08.797819",
+    "latency": {
+      "cartesia": 2.03,
+      "elevenlabs": 0.57,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 2,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 4,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": "WHO and NSAIDs were wrong"
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": "WHO and NSAIDs were right"
+    },
+    "comparison": {
+      "winner": "Eleven Labs",
+      "notes": "Slightly less natural on 11 labs, but the words were right"
+    }
+  },
+  {
+    "test_id": "E4-M1",
+    "text": "The patient presented with acute exacerbation of chronic obstructive pulmonary disease, requiring nebulized ipratropium bromide and oral prednisone taper.",
+    "category": "medical",
+    "timestamp": "2025-12-21T22:51:54.830752",
+    "latency": {
+      "cartesia": 2.12,
+      "elevenlabs": 0.7,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "tbh I can't quite tell. I do think c sounded better"
+    }
+  },
+  {
+    "test_id": "E4-M4",
+    "text": "I'm sorry to tell you that the biopsy results show adenocarcinoma. We caught it early, and I want to walk you through your treatment options.",
+    "category": "medical",
+    "timestamp": "2025-12-21T22:53:10.358197",
+    "latency": {
+      "cartesia": 1.92,
+      "elevenlabs": 0.55,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 1,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.6,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 1,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.6,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "wow both of them sucked at emotionality lol."
+    }
+  },
+  {
+    "test_id": "E5-F1",
+    "text": "AAPL closed at $187.32, down 2.3% on 45M shares. The 50-DMA crossed below the 200-DMA, signaling a death cross.",
+    "category": "financial",
+    "timestamp": "2025-12-21T22:54:47.787739",
+    "latency": {
+      "cartesia": 4.38,
+      "elevenlabs": 0.68,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": "dollar figure was right"
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 4,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.2,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "Both got DMAs wrong, both got million wrong"
+    }
+  },
+  {
+    "test_id": "E5-F2",
+    "text": "The LBO was structured with 6x leverage: 4x senior secured at SOFR+425bps, 2x mezz at 12% PIK.",
+    "category": "financial",
+    "timestamp": "2025-12-21T22:55:18.841893",
+    "latency": {
+      "cartesia": 2.33,
+      "elevenlabs": 0.75,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "Both kinda bad."
+    }
+  },
+  {
+    "test_id": "E5-F3",
+    "text": "Q3 results: Revenue $847M (+12% YoY), Adj. EBITDA $156M (18.4% margin), FCF $89M. Raised FY guidance to $3.2-3.4B.",
+    "category": "financial",
+    "timestamp": "2025-12-21T22:58:05.945059",
+    "latency": {
+      "cartesia": 4.12,
+      "elevenlabs": 0.92,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": "EBITDA was right, million was right, adj wrong "
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 2,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 2.6,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "Both kinda bad, Cartesia sounded mildly better. there's always a weird wait behind period with Cartesia "
+    }
+  },
+  {
+    "test_id": "E6-P1",
+    "text": "The morning sun cast long shadows across the empty street. Sarah hesitated at the corner, her heart pounding. She had waited three years for this moment \u2014 three years of planning, of doubt, of quiet determination. Now, standing here, she wasn't sure if she felt brave or terrified. Perhaps both. She took a breath, adjusted her bag, and stepped forward into the unknown.",
+    "category": "prosody_longform",
+    "timestamp": "2025-12-21T22:59:12.444751",
+    "latency": {
+      "cartesia": 4.59,
+      "elevenlabs": 1.25,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 4,
+      "emotional_appropriateness": 4,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 3.2,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Eleven Labs",
+      "notes": "Elevenlabs sounded so much better wrt emotionality! "
+    }
+  },
+  {
+    "test_id": "E6-P2",
+    "text": "Machine learning models learn patterns from data through a process called training. During training, the model makes predictions, compares them to the correct answers, and adjusts its internal parameters to reduce errors. This cycle repeats millions of times. The key challenge isn't just accuracy on training data \u2014 it's generalization: performing well on new, unseen examples.",
+    "category": "prosody_longform",
+    "timestamp": "2025-12-21T23:00:04.375453",
+    "latency": {
+      "cartesia": 5.05,
+      "elevenlabs": 1.23,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 4,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Eleven Labs",
+      "notes": ""
+    }
+  },
+  {
+    "test_id": "E6-P3",
+    "text": "Wait, what? You got the job? Oh my god, that's amazing! I knew you could do it. Honestly, I was a little worried after what happened last time, but... no, forget that. This is YOUR moment. We need to celebrate. Are you free tonight?",
+    "category": "prosody_longform",
+    "timestamp": "2025-12-21T23:01:06.963316",
+    "latency": {
+      "cartesia": 4.27,
+      "elevenlabs": 0.83,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 4,
+      "emotional_appropriateness": 4,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.4,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": "Cartesia seems to be better at these exaggerated emotionality, also thinking about their demo on website"
+    }
+  },
+  {
+    "test_id": "E7-E1",
+    "text": "The new caf\u00e9 on K\u00f6nigstra\u00dfe serves amazing cr\u00e8me br\u00fbl\u00e9e. Their pi\u00e8ce de r\u00e9sistance is the matcha tiramisu.",
+    "category": "edge_cases",
+    "timestamp": "2025-12-21T23:02:01.529508",
+    "latency": {
+      "cartesia": 1.64,
+      "elevenlabs": 0.52,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 5,
+      "prosody": 4,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.6,
+      "notes": "Great pronunciation"
+    },
+    "comparison": {
+      "winner": "Eleven Labs",
+      "notes": "11 is much better at multilingual stuff"
+    }
+  },
+  {
+    "test_id": "E7-E2",
+    "text": "The manager said, 'This is absolutely unacceptable,' but then added quietly, 'though I understand why you did it.'",
+    "category": "edge_cases",
+    "timestamp": "2025-12-21T23:02:41.664348",
+    "latency": {
+      "cartesia": 1.61,
+      "elevenlabs": 0.51,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 4,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "Both of them are weird. I think the rhythm are both off, but I think Cartesia sounded more human"
+    }
+  },
+  {
+    "test_id": "E7-E3",
+    "text": "Please bring: 1) your passport, 2) Dr. Martinez's referral letter, 3) the $50 co-pay, and 4) form W-9 or W-8BEN if applicable.",
+    "category": "edge_cases",
+    "timestamp": "2025-12-21T23:03:34.796870",
+    "latency": {
+      "cartesia": 2.56,
+      "elevenlabs": 0.62,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 4,
+      "prosody": 4,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 3.2,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Eleven Labs",
+      "notes": "Sounded so much easier to understand with 11"
+    }
+  },
+  {
+    "test_id": "J1-K1",
+    "text": "\u4eca\u65e5\u306f\u4f1a\u793e\u306b\u884c\u3063\u3066\u3001\u660e\u65e5\u306e\u4f1a\u8b70\u306e\u6e96\u5099\u3092\u3057\u307e\u3059\u3002",
+    "category": "kanji_readings",
+    "timestamp": "2025-12-21T23:35:52.585938",
+    "latency": {
+      "cartesia": 1.26,
+      "elevenlabs": 0.4,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 4,
+      "emotional_appropriateness": 3,
+      "naturalness": 5,
+      "consistency": 3,
+      "average_score": 3.6,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 1,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 2.2,
+      "notes": "Very bad, sounded like an American"
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": ""
+    }
+  },
+  {
+    "test_id": "J2-N1",
+    "text": "\u308a\u3093\u30543\u500b\u3001\u672c5\u518a\u3001\u732b2\u5339\u3001\u8eca1\u53f0\u3092\u8cb7\u3044\u307e\u3057\u305f\u3002",
+    "category": "numbers_counters",
+    "timestamp": "2025-12-21T23:41:04.773267",
+    "latency": {
+      "cartesia": 1.29,
+      "elevenlabs": 0.57,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 5,
+      "prosody": 4,
+      "emotional_appropriateness": 3,
+      "naturalness": 4,
+      "consistency": 3,
+      "average_score": 3.8,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 1,
+      "prosody": 1,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.2,
+      "notes": "Horrific. all very bad "
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": "Cartesia was **clearly winning** all "
+    }
+  },
+  {
+    "test_id": "J3-PA1",
+    "text": "\u6a4b\u306e\u7aef\u3092\u7bb8\u3067\u6e21\u3063\u305f\u3002",
+    "category": "pitch_accent",
+    "timestamp": "2025-12-21T23:41:31.265946",
+    "latency": {
+      "cartesia": 0.75,
+      "elevenlabs": 0.69,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 1,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.6,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": "C clearly winning on Japanese"
+    }
+  },
+  {
+    "test_id": "J4-R1",
+    "text": "\u304a\u5ba2\u69d8\u3001\u5927\u5909\u7533\u3057\u8a33\u3054\u3056\u3044\u307e\u305b\u3093\u304c\u3001\u53ea\u4eca\u6e80\u5e2d\u3068\u306a\u3063\u3066\u304a\u308a\u307e\u3059\u3002\u5c11\u3005\u304a\u5f85\u3061\u3044\u305f\u3060\u3051\u307e\u3059\u3067\u3057\u3087\u3046\u304b\u3002",
+    "category": "keigo_register",
+    "timestamp": "2025-12-21T23:42:12.240828",
+    "latency": {
+      "cartesia": 1.5,
+      "elevenlabs": 0.62,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 2,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 4,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 1,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.6,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": "Surprising both had issue with some of the kanji "
+    }
+  },
+  {
+    "test_id": "J5-M1",
+    "text": "\u60a3\u8005\u306f\u6162\u6027\u9589\u585e\u6027\u80ba\u75be\u60a3\u306e\u6025\u6027\u5897\u60aa\u3092\u5448\u3057\u3066\u304a\u308a\u3001\u30b5\u30eb\u30d6\u30bf\u30e2\u30fc\u30eb\u5438\u5165\u3068\u30d7\u30ec\u30c9\u30cb\u30be\u30ed\u30f3\u7d4c\u53e3\u6295\u4e0e\u3092\u958b\u59cb\u3057\u307e\u3057\u305f\u3002",
+    "category": "medical",
+    "timestamp": "2025-12-21T23:42:38.027681",
+    "latency": {
+      "cartesia": 2.1,
+      "elevenlabs": 1.14,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "Don't know enough Japanese to rate lol"
+    }
+  },
+  {
+    "test_id": "J6-L1",
+    "text": "\u3053\u306e\u30a2\u30d7\u30ea\u306eUI\u3092\u30a2\u30c3\u30d7\u30c7\u30fc\u30c8\u3057\u3066\u3001\u30e6\u30fc\u30b6\u30fc\u30a8\u30af\u30b9\u30da\u30ea\u30a8\u30f3\u30b9\u3092\u6539\u5584\u3057\u307e\u3057\u3087\u3046\u3002",
+    "category": "loanwords",
+    "timestamp": "2025-12-21T23:43:05.643062",
+    "latency": {
+      "cartesia": 1.32,
+      "elevenlabs": 0.54,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "Actually surprisingly tie. best for eleven labs so far"
+    }
+  },
+  {
+    "test_id": "J7-P1",
+    "text": "\u3048\u3001\u672c\u5f53\uff1f\u3084\u3063\u305f\uff01\u3064\u3044\u306b\u53d7\u304b\u3063\u305f\u3093\u3060\uff01\u4e09\u5e74\u3082\u9811\u5f35\u3063\u3066... \u3048\u3001\u4e2d\u6b62\uff1f\u5618\u3067\u3057\u3087... \u4f55\u3066\u8a00\u3048\u3070\u3044\u3044\u304b\u5206\u304b\u3089\u306a\u3044\u3002",
+    "category": "prosody_emotion",
+    "timestamp": "2025-12-21T23:44:23.734358",
+    "latency": {
+      "cartesia": 1.92,
+      "elevenlabs": 0.49,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 1,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 2.4,
+      "notes": "Super weird. "
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 2,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": "\u9811\u5f35\u3063\u3066 was wrong"
+    },
+    "comparison": {
+      "winner": "Eleven Labs",
+      "notes": "Both weirdly bad, but 11 slightly better"
+    }
+  },
+  {
+    "test_id": "D1-K1",
+    "text": "Die Kraftfahrzeughaftpflichtversicherung deckt Sch\u00e4den ab, die durch den Betrieb des Donaudampfschifffahrtsgesellschaftskapit\u00e4ns entstehen.",
+    "category": "compound_words",
+    "timestamp": "2025-12-21T23:47:32.186468",
+    "latency": {
+      "cartesia": 1.71,
+      "elevenlabs": 0.74,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": "Sounded more human, but prosody was so bad that it was hard to grok what exactly is being said"
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": "Better prosody but sounded still weird. Kraftfahrzeughaftpflichtversicherung wasn't perfect, Donaudampfschifffahrtsgesellschaftskapit\u00e4ns was choppy "
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "Both of them were weird, I think it's because these composite words needed good rhythm to be understood "
+    }
+  },
+  {
+    "test_id": "D2-N1",
+    "text": "Der Kaufpreis betr\u00e4gt 1.234.567,89 \u20ac, zahlbar bis zum 31.12.2024. Die Anzahlung von 10% (123.456,79 \u20ac) ist sofort f\u00e4llig.",
+    "category": "numbers_currency",
+    "timestamp": "2025-12-21T23:49:00.680790",
+    "latency": {
+      "cartesia": 4.36,
+      "elevenlabs": 0.86,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 4,
+      "emotional_appropriateness": 3,
+      "naturalness": 4,
+      "consistency": 3,
+      "average_score": 3.4,
+      "notes": "Date is wrong! "
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 2,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": "All numbers were super duper wrong lol."
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": "Rhythm surprisingly good with C, can't believe dates were wrong with both!"
+    }
+  },
+  {
+    "test_id": "D3-F1",
+    "text": "Das neue Software-Update fixt den Bug im User Interface. Der CEO pr\u00e4sentierte die Roadmap beim Stakeholder-Meeting.",
+    "category": "code_switching",
+    "timestamp": "2025-12-21T23:49:39.399014",
+    "latency": {
+      "cartesia": 1.75,
+      "elevenlabs": 1.08,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": "Not wrong, but weirdly \"English sounding\" "
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": ""
+    }
+  },
+  {
+    "test_id": "D4-M1",
+    "text": "Die Patientin zeigt eine akute Exazerbation ihrer chronisch-obstruktiven Lungenerkrankung. Therapie: Salbutamol-Inhalation, Prednisolon-Sto\u00dftherapie.",
+    "category": "medical",
+    "timestamp": "2025-12-21T23:54:16.549258",
+    "latency": {
+      "cartesia": 2.35,
+      "elevenlabs": 1.14,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 4,
+      "emotional_appropriateness": 3,
+      "naturalness": 4,
+      "consistency": 3,
+      "average_score": 3.4,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 2,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 1,
+      "consistency": 3,
+      "average_score": 2.2,
+      "notes": "The therapy section was horrible lol. prosody was bad in the first sentence!"
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": ""
+    }
+  },
+  {
+    "test_id": "D5-U1",
+    "text": "Die Mutter sprach \u00fcber ihre M\u00fctter. Die V\u00e4ter der Kinder schwammen, w\u00e4hrend die Schw\u00e4ne vorbeizogen.",
+    "category": "umlauts",
+    "timestamp": "2025-12-21T23:55:02.490521",
+    "latency": {
+      "cartesia": 1.55,
+      "elevenlabs": 0.64,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": "surprisingly the same ish. c sounded more natural, but it was close"
+    }
+  },
+  {
+    "test_id": "D6-R1",
+    "text": "Sehr geehrte Damen und Herren, bezugnehmend auf Ihr Schreiben vom 15. M\u00e4rz m\u00f6chte ich Ihnen mitteilen, dass wir Ihrem Antrag leider nicht entsprechen k\u00f6nnen. Mit freundlichen Gr\u00fc\u00dfen.",
+    "category": "register",
+    "timestamp": "2025-12-21T23:56:00.714818",
+    "latency": {
+      "cartesia": 2.58,
+      "elevenlabs": 0.8,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 4,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Eleven Labs",
+      "notes": "Slightly better intonation / emotionality on Eleven labs"
+    }
+  },
+  {
+    "test_id": "D7-P1",
+    "text": "Ich hab's geschafft! Endlich! Nach drei Jahren... warte, was meinst du, es wurde abgesagt? Das kann doch nicht wahr sein. Das ist... ich wei\u00df nicht, was ich sagen soll.",
+    "category": "prosody_emotion",
+    "timestamp": "2025-12-21T23:57:14.554416",
+    "latency": {
+      "cartesia": 2.76,
+      "elevenlabs": 0.79,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": "The first part was good, second part emotional switch was not "
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 4,
+      "emotional_appropriateness": 4,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 3.2,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Eleven Labs",
+      "notes": "Second half sounded better with E"
+    }
+  },
+  {
+    "test_id": "C1-P1",
+    "text": "\u4ed6\u89c9\u5f97\u8fd9\u4e2a\u97f3\u4e50\u5f88\u597d\u542c\uff0c\u7761\u89c9\u524d\u90fd\u8981\u542c\u4e00\u904d\u3002",
+    "category": "polyphones",
+    "timestamp": "2025-12-21T23:58:02.681778",
+    "latency": {
+      "cartesia": 1.14,
+      "elevenlabs": 0.62,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "pretty much the same lol"
+    }
+  },
+  {
+    "test_id": "C2-N1",
+    "text": "\u8bf7\u62e8\u6253\u5ba2\u670d\u7535\u8bdd\uff1a400-123-4567\u3002\u8425\u4e1a\u65f6\u95f4\uff1a\u5468\u4e00\u81f3\u5468\u4e94 9:00-18:00\u3002",
+    "category": "numbers_dates",
+    "timestamp": "2025-12-21T23:59:00.905325",
+    "latency": {
+      "cartesia": 2.11,
+      "elevenlabs": 0.96,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": "time was still not great, but better than e"
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 2,
+      "prosody": 2,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 2.6,
+      "notes": "time was all wrong lol."
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": ""
+    }
+  },
+  {
+    "test_id": "C3-T1",
+    "text": "\u8be5API\u63a5\u53e3\u652f\u6301RESTful\u67b6\u6784\uff0c\u8fd4\u56deJSON\u683c\u5f0f\u6570\u636e\u3002\u8bf7\u53c2\u8003SDK\u6587\u6863\u7b2c3.2\u8282\u3002",
+    "category": "technical_financial",
+    "timestamp": "2025-12-22T00:00:57.224763",
+    "latency": {
+      "cartesia": 2.04,
+      "elevenlabs": 0.96,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 5,
+      "consistency": 3,
+      "average_score": 3.4,
+      "notes": "Restful pronunciation was really good! "
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 4,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "I liked the overall sound of C better, but I felt the JSON was pronounced better with 11 labs "
+    }
+  },
+  {
+    "test_id": "C4-M1",
+    "text": "\u60a3\u8005\u8bca\u65ad\u4e3a\u6162\u6027\u963b\u585e\u6027\u80ba\u75be\u75c5\u6025\u6027\u52a0\u91cd\u671f\uff0c\u7ed9\u4e88\u6c99\u4e01\u80fa\u9187\u96fe\u5316\u5438\u5165\u53ca\u6cfc\u5c3c\u677e\u53e3\u670d\u6cbb\u7597\u3002",
+    "category": "medical",
+    "timestamp": "2025-12-22T00:01:37.627107",
+    "latency": {
+      "cartesia": 2.02,
+      "elevenlabs": 0.96,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 3,
+      "consistency": 3,
+      "average_score": 3.0,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Tie",
+      "notes": "I can't tell, but both of them had some pronunciation issues. prob equally bad "
+    }
+  },
+  {
+    "test_id": "C5-CS1",
+    "text": "\u8fd9\u4e2aproject\u7684deadline\u662f\u4e0b\u5468\u4e94\u3002\u8bf7\u5148\u5b8c\u6210PPT\uff0c\u7136\u540e\u8ddfteam sync\u4e00\u4e0b\u3002",
+    "category": "code_switching",
+    "timestamp": "2025-12-22T00:02:04.179992",
+    "latency": {
+      "cartesia": 1.64,
+      "elevenlabs": 0.47,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 5,
+      "consistency": 3,
+      "average_score": 3.4,
+      "notes": "wow this was *Really* good"
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": ""
+    }
+  },
+  {
+    "test_id": "C6-P1",
+    "text": "\u4ec0\u4e48\uff1f\u4f60\u88ab\u5f55\u53d6\u4e86\uff1f\u592a\u68d2\u4e86\uff01\u6211\u5c31\u77e5\u9053\u4f60\u53ef\u4ee5\u7684\uff01\u7b49\u7b49...\u4ed6\u4eec\u53c8\u8bf4\u53d6\u6d88\u4e86\uff1f\u600e\u4e48\u4f1a\u8fd9\u6837...\u6211\u771f\u7684\u4e0d\u77e5\u9053\u8be5\u8bf4\u4ec0\u4e48\u4e86\u3002",
+    "category": "prosody_tone",
+    "timestamp": "2025-12-22T00:02:43.681498",
+    "latency": {
+      "cartesia": 3.07,
+      "elevenlabs": 0.69,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 4,
+      "emotional_appropriateness": 4,
+      "naturalness": 5,
+      "consistency": 3,
+      "average_score": 3.8,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 2,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 2.6,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": "wow why is Cartesia so good with asian languages ?!"
+    }
+  },
+  {
+    "test_id": "C7-SF1",
+    "text": "\u4f60\u5403\u996d\u4e86\u5417\uff1f\u6211\u5403\u8fc7\u4e86\u3002\u90a3\u6211\u4eec\u8d70\u5427\u3002\u597d\u554a\uff0c\u8d70\u5427\uff01\u7b49\u7b49\uff0c\u4f60\u786e\u5b9a\u5417\uff1f\u5f53\u7136\u786e\u5b9a\u5566\uff01",
+    "category": "particles",
+    "timestamp": "2025-12-22T00:03:23.205216",
+    "latency": {
+      "cartesia": 2.4,
+      "elevenlabs": 0.67,
+      "faster": "elevenlabs"
+    },
+    "cartesia": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 5,
+      "consistency": 3,
+      "average_score": 3.4,
+      "notes": ""
+    },
+    "elevenlabs": {
+      "pronunciation_accuracy": 3,
+      "prosody": 3,
+      "emotional_appropriateness": 3,
+      "naturalness": 2,
+      "consistency": 3,
+      "average_score": 2.8,
+      "notes": ""
+    },
+    "comparison": {
+      "winner": "Cartesia",
+      "notes": "C sounded much more human"
+    }
+  }
+]

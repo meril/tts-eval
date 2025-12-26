@@ -1,0 +1,25 @@
+{
+  "cartesia": [
+    {
+      "status": "success",
+      "generation_time": 1.2891860008239746,
+      "text_length": 92,
+      "model_id": "sonic-3",
+      "voice_id": "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
+      "file_path": "outputs/cartesia/cartesia_E1-H2.mp3",
+      "provider": "cartesia",
+      "test_id": "E1-H2",
+      "category": "heteronyms",
+      "timestamp": "2025-12-21T21:39:03.876141"
+    }
+  ],
+  "elevenlabs": [],
+  "summary": {
+    "total_tests": 1,
+    "successful": 1,
+    "failed": 0,
+    "start_time": "2025-12-21T21:39:02.563181",
+    "end_time": "2025-12-21T21:39:04.381211",
+    "success_rate": 1.0
+  }
+}

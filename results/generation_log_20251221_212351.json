@@ -1,0 +1,25 @@
+{
+  "cartesia": [],
+  "elevenlabs": [
+    {
+      "status": "success",
+      "generation_time": 0.44116806983947754,
+      "text_length": 68,
+      "model_id": "eleven_flash_v2_5",
+      "voice_id": "EXAVITQu4vr4xnSDxMaL",
+      "file_path": "outputs/elevenlabs/elevenlabs_E1-H1.mp3",
+      "provider": "elevenlabs",
+      "test_id": "E1-H1",
+      "category": "heteronyms",
+      "timestamp": "2025-12-21T21:23:51.177951"
+    }
+  ],
+  "summary": {
+    "total_tests": 1,
+    "successful": 1,
+    "failed": 0,
+    "start_time": "2025-12-21T21:23:50.722280",
+    "end_time": "2025-12-21T21:23:51.683460",
+    "success_rate": 1.0
+  }
+}

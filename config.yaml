@@ -1,0 +1,61 @@
+# TTS Evaluation Configuration
+
+# API Keys (add your keys here)
+api_keys:
+  cartesia: "CARTESIA_API_KEY"
+  elevenlabs: "ELEVENLABS_API_KEY"
+
+# Model Configuration
+models:
+  cartesia:
+    model_id: "sonic-3"
+    voice_id: "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc"  # Update with your preferred voice ID
+    language_voices:
+      en: "9626c31c-bec5-4cca-baa8-f8ba9e84c8bc"  # Example - update with actual voice ID
+      de: "38aabb6a-f52b-4fb0-a3d1-988518f4dc06"  # Add German voice ID
+      zh: "7a5d4663-88ae-47b7-808e-8f9b9ee4127b"  # Add Mandarin voice ID
+      ja: "59d4fd2f-f5eb-4410-8105-58db7661144f"  # Add Japanese voice ID
+
+  elevenlabs:
+    model_id: "eleven_flash_v2_5"
+    voice_id: "EXAVITQu4vr4xnSDxMaL"  # Sarah
+    language_voices:
+      en: "EXAVITQu4vr4xnSDxMaL"  # Sarah
+      de: "EXAVITQu4vr4xnSDxMaL"  # Sarah
+      zh: "EXAVITQu4vr4xnSDxMaL"  # Sarah
+      ja: "EXAVITQu4vr4xnSDxMaL"  # Sarah
+
+# Output Settings
+output:
+  format: "mp3"
+  sample_rate: 24000
+  cartesia_output_dir: "outputs/cartesia"
+  elevenlabs_output_dir: "outputs/elevenlabs"
+
+# Evaluation Criteria
+evaluation_criteria:
+  - name: "Pronunciation Accuracy"
+    description: "Correct phonemes, heteronyms, polyphones"
+    scale: [1, 2, 3, 4, 5]
+
+  - name: "Prosody"
+    description: "Natural rhythm, stress, intonation patterns"
+    scale: [1, 2, 3, 4, 5]
+
+  - name: "Emotional Appropriateness"
+    description: "Matches intended tone/sentiment"
+    scale: [1, 2, 3, 4, 5]
+
+  - name: "Naturalness"
+    description: "Sounds like a native speaker"
+    scale: [1, 2, 3, 4, 5]
+
+  - name: "Consistency"
+    description: "Same quality across multiple generations"
+    scale: [1, 2, 3, 4, 5]
+
+# Testing Configuration
+testing:
+  languages_to_test: ["en", "de", "zh", "ja"]
+  current_focus: ["en"]  # Start with English only
+  repetitions_per_test: 1  # Generate each test case N times to check consistency

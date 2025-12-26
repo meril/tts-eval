@@ -1,0 +1,90 @@
+{
+  "language": "de",
+  "language_name": "German",
+  "test_categories": [
+    {
+      "category": "compound_words",
+      "description": "Komposita (Compound Words)",
+      "tests": [
+        {
+          "test_id": "D1-K1",
+          "text": "Die Kraftfahrzeughaftpflichtversicherung deckt Schäden ab, die durch den Betrieb des Donaudampfschifffahrtsgesellschaftskapitäns entstehen.",
+          "expected_challenges": ["Very long compound words", "Proper stress patterns"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "numbers_currency",
+      "description": "Numbers & Currency",
+      "tests": [
+        {
+          "test_id": "D2-N1",
+          "text": "Der Kaufpreis beträgt 1.234.567,89 €, zahlbar bis zum 31.12.2024. Die Anzahlung von 10% (123.456,79 €) ist sofort fällig.",
+          "expected_challenges": ["German number formatting", "Currency reading", "Date format"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "code_switching",
+      "description": "Foreign Words & Code-Switching",
+      "tests": [
+        {
+          "test_id": "D3-F1",
+          "text": "Das neue Software-Update fixt den Bug im User Interface. Der CEO präsentierte die Roadmap beim Stakeholder-Meeting.",
+          "expected_challenges": ["English loanwords in German context", "Mixed pronunciation"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "medical",
+      "description": "Medical Domain",
+      "tests": [
+        {
+          "test_id": "D4-M1",
+          "text": "Die Patientin zeigt eine akute Exazerbation ihrer chronisch-obstruktiven Lungenerkrankung. Therapie: Salbutamol-Inhalation, Prednisolon-Stoßtherapie.",
+          "expected_challenges": ["Medical terminology", "Complex compounds"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "umlauts",
+      "description": "Umlauts & Similar Words",
+      "tests": [
+        {
+          "test_id": "D5-U1",
+          "text": "Die Mutter sprach über ihre Mütter. Die Väter der Kinder schwammen, während die Schwäne vorbeizogen.",
+          "expected_challenges": ["Umlaut pronunciation", "Similar sounding words"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "register",
+      "description": "Formal vs. Informal Register",
+      "tests": [
+        {
+          "test_id": "D6-R1",
+          "text": "Sehr geehrte Damen und Herren, bezugnehmend auf Ihr Schreiben vom 15. März möchte ich Ihnen mitteilen, dass wir Ihrem Antrag leider nicht entsprechen können. Mit freundlichen Grüßen.",
+          "expected_challenges": ["Formal business German", "Appropriate prosody"],
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "category": "prosody_emotion",
+      "description": "Prosody & Emotion",
+      "tests": [
+        {
+          "test_id": "D7-P1",
+          "text": "Ich hab's geschafft! Endlich! Nach drei Jahren... warte, was meinst du, es wurde abgesagt? Das kann doch nicht wahr sein. Das ist... ich weiß nicht, was ich sagen soll.",
+          "expected_challenges": ["Emotional shifts", "Excitement to disappointment"],
+          "importance": "high"
+        }
+      ]
+    }
+  ]
+}
