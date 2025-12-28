@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TTS Evaluation: Cartesia Sonic 3 vs ElevenLabs Flash v2.5</title>
     <style>
+        :root {
+            --bg-color: #e6e6e6;
+            --paper-color: #f4f1ea;
+            --ink-color: #1a1a1a;
+            --accent-color: #333;
+            --highlight-color: #000;
+            --border-style: 1px solid #1a1a1a;
+            --dashed-border: 1px dashed #1a1a1a;
+            --grid-line: 1px solid #ccc;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -12,87 +23,183 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: #0a0a0a;
-            color: #e0e0e0;
-            line-height: 1.6;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-color);
+            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1v1H5V0zM0 5h1v1H0V5z'/%3E%3C/g%3E%3C/svg%3E");
+            color: var(--ink-color);
+            line-height: 1.4;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+        .paper-wrapper {
+            background: var(--paper-color);
+            width: 100%;
+            max-width: 1000px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+            display: flex;
+            position: relative;
+            /* Paper texture effect */
+            background-image: url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3h1v1H1V3zm2-2h1v1H3V1z' fill='%23000000' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .holes-strip {
+            width: 60px;
+            border-right: var(--border-style);
+            background: #e8e5de;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 40px;
+            gap: 40px;
+            flex-shrink: 0;
+        }
+
+        .hole {
+            width: 20px;
+            height: 20px;
+            background: var(--bg-color);
+            border-radius: 50%;
+            box-shadow: inset 1px 1px 3px rgba(0,0,0,0.2);
+        }
+
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
             text-align: center;
             padding: 40px 20px;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            border-bottom: 1px solid #333;
+            border-bottom: var(--border-style);
+            background: transparent;
         }
 
         h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
             margin-bottom: 10px;
-            background: linear-gradient(90deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-weight: 700;
         }
 
         .subtitle {
-            color: #888;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            font-style: italic;
+            border-top: var(--dashed-border);
+            display: inline-block;
+            padding-top: 5px;
+            margin-top: 5px;
         }
 
         .tabs {
             display: flex;
-            gap: 0;
-            background: #1a1a1a;
-            border-bottom: 1px solid #333;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            border-bottom: var(--border-style);
+            background: #eee;
         }
 
         .tab {
-            padding: 15px 30px;
+            flex: 1;
+            padding: 15px;
             cursor: pointer;
             border: none;
             background: transparent;
-            color: #888;
+            color: #666;
+            font-family: inherit;
             font-size: 1rem;
-            transition: all 0.3s;
-            border-bottom: 2px solid transparent;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-right: var(--border-style);
+            transition: all 0.2s;
+        }
+
+        .tab:last-child {
+            border-right: none;
         }
 
         .tab:hover {
-            color: #fff;
-            background: #252525;
+            background: #e0e0e0;
+            color: #000;
         }
 
         .tab.active {
-            color: #667eea;
-            border-bottom: 2px solid #667eea;
-            background: #1f1f1f;
+            background: var(--paper-color);
+            color: #000;
+            box-shadow: inset 0 -3px 0 #000;
+        }
+
+        .container {
+            padding: 30px;
         }
 
         .tab-content {
             display: none;
-            padding: 30px 0;
         }
 
         .tab-content.active {
             display: block;
         }
 
+        /* Summary Cards - Grid Layout */
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border: var(--border-style);
+            margin-bottom: 40px;
+        }
+
+        .summary-card {
+            padding: 20px;
+            border-right: var(--border-style);
+            border-bottom: var(--border-style);
+            background: transparent;
+        }
+
+        .summary-card:nth-child(2n) {
+            border-right: none;
+        }
+
+        .summary-card:nth-last-child(-n+2) {
+            border-bottom: none;
+        }
+
+        .summary-card h3 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            opacity: 0.7;
+        }
+
+        .summary-card .value {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .summary-card .value.cartesia {
+            text-decoration: underline;
+        }
+
+        .summary-card .value.elevenlabs {
+            font-style: italic;
+        }
+
+        .summary-card .detail {
+            font-size: 0.8rem;
+            margin-top: 5px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
         /* Filters */
         .filters {
             display: flex;
-            gap: 15px;
+            gap: 20px;
             margin-bottom: 30px;
+            padding: 15px;
+            border: var(--dashed-border);
             flex-wrap: wrap;
-            align-items: center;
         }
 
         .filter-group {
@@ -102,135 +209,88 @@
         }
 
         .filter-group label {
-            color: #888;
             font-size: 0.9rem;
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
         select {
-            padding: 8px 15px;
-            border-radius: 6px;
-            border: 1px solid #444;
-            background: #2a2a2a;
-            color: #fff;
+            padding: 5px 10px;
+            border: var(--border-style);
+            background: #fff;
+            font-family: inherit;
             font-size: 0.9rem;
             cursor: pointer;
+            border-radius: 0;
+            box-shadow: 2px 2px 0 #000;
         }
 
-        select:hover {
-            border-color: #667eea;
+        select:active {
+            box-shadow: 1px 1px 0 #000;
+            transform: translate(1px, 1px);
         }
 
-        /* Summary cards */
-        .summary-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-
-        .summary-card {
-            background: linear-gradient(135deg, #1f1f2e 0%, #1a1a2a 100%);
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #333;
-        }
-
-        .summary-card h3 {
-            color: #888;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-        }
-
-        .summary-card .value {
-            font-size: 2rem;
-            font-weight: 700;
-        }
-
-        .summary-card .value.cartesia {
-            color: #667eea;
-        }
-
-        .summary-card .value.elevenlabs {
-            color: #f59e0b;
-        }
-
-        .summary-card .detail {
-            color: #666;
-            font-size: 0.85rem;
-            margin-top: 5px;
-        }
-
-        /* Test case cards */
+        /* Test Cases */
         .test-case {
-            background: #1a1a1a;
-            border-radius: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #2a2a2a;
-            overflow: hidden;
+            border: var(--border-style);
+            margin-bottom: -1px; /* Collapse borders */
+            background: transparent;
         }
 
         .test-case-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 20px;
-            background: #222;
+            padding: 15px;
             cursor: pointer;
-            transition: background 0.3s;
+            background: transparent;
+            transition: background 0.2s;
         }
 
         .test-case-header:hover {
-            background: #2a2a2a;
+            background: rgba(0,0,0,0.03);
         }
 
         .test-case-id {
-            font-weight: 600;
-            color: #667eea;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border: 1px solid #000;
+            padding: 2px 6px;
+            margin-right: 10px;
         }
 
         .test-case-meta {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             align-items: center;
         }
 
         .badge {
-            padding: 4px 10px;
-            border-radius: 4px;
+            padding: 2px 8px;
+            border: 1px solid #000;
             font-size: 0.75rem;
-            font-weight: 500;
-        }
-
-        .badge.language {
-            background: #2d3748;
-            color: #a0aec0;
-        }
-
-        .badge.category {
-            background: #1e3a5f;
-            color: #63b3ed;
+            text-transform: uppercase;
+            background: #fff;
+            color: #000;
+            border-radius: 0;
         }
 
         .badge.winner-cartesia {
-            background: #1e1e4a;
-            color: #667eea;
+            background: #000;
+            color: #fff;
         }
 
         .badge.winner-elevenlabs {
-            background: #4a3e1e;
-            color: #f59e0b;
-        }
-
-        .badge.winner-tie {
-            background: #2a2a2a;
-            color: #888;
+            background: #ddd;
+            color: #000;
+            border-style: dashed;
         }
 
         .test-case-body {
             padding: 20px;
             display: none;
+            border-top: var(--dashed-border);
+            background: rgba(0,0,0,0.02);
         }
 
         .test-case.expanded .test-case-body {
@@ -238,285 +298,262 @@
         }
 
         .test-text {
-            background: #252525;
+            background: #fff;
             padding: 15px;
-            border-radius: 8px;
+            border: var(--border-style);
             margin-bottom: 20px;
             font-style: italic;
-            color: #ccc;
-            border-left: 3px solid #667eea;
+            color: #000;
+            font-family: 'Times New Roman', Times, serif; /* Contrast font for text */
+            font-size: 1.1rem;
+            box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
         }
 
         .audio-comparison {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            gap: 0;
+            border: var(--border-style);
             margin-bottom: 20px;
         }
 
-        @media (max-width: 768px) {
-            .audio-comparison {
-                grid-template-columns: 1fr;
-            }
+        .audio-panel {
+            padding: 20px;
+            background: transparent;
         }
 
-        .audio-panel {
-            background: #222;
-            padding: 20px;
-            border-radius: 8px;
+        .audio-panel:first-child {
+            border-right: var(--border-style);
         }
 
         .audio-panel h4 {
             margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .audio-panel.cartesia h4 {
-            color: #667eea;
-        }
-
-        .audio-panel.elevenlabs h4 {
-            color: #f59e0b;
+            text-transform: uppercase;
+            border-bottom: 2px solid #000;
+            display: inline-block;
+            padding-bottom: 2px;
         }
 
         .audio-panel audio {
             width: 100%;
             margin-bottom: 15px;
+            filter: grayscale(100%) contrast(1.2);
         }
 
         .metrics {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
+            grid-template-columns: 1fr;
+            gap: 0;
             font-size: 0.85rem;
+            border: var(--border-style);
         }
 
         .metric {
             display: flex;
             justify-content: space-between;
-            padding: 5px 0;
-            border-bottom: 1px solid #333;
+            padding: 8px 12px;
+            border-bottom: var(--border-style);
+        }
+
+        .metric:last-child {
+            border-bottom: none;
         }
 
         .metric-label {
-            color: #888;
-        }
-
-        .metric-value {
-            font-weight: 600;
+            font-weight: bold;
         }
 
         .latency-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 0.8rem;
+            padding: 2px 6px;
+            border: 1px solid #000;
+            font-size: 0.75rem;
         }
 
         .latency-badge.faster {
-            background: #1e4a1e;
-            color: #68d391;
-        }
-
-        .latency-badge.slower {
-            background: #4a1e1e;
-            color: #fc8181;
+            background: #000;
+            color: #fff;
         }
 
         .notes-section {
             margin-top: 15px;
             padding: 15px;
-            background: #1f1f1f;
-            border-radius: 8px;
+            border: var(--dashed-border);
+            background: #fff;
         }
 
         .notes-section h5 {
-            color: #888;
-            font-size: 0.8rem;
             text-transform: uppercase;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
+            text-decoration: underline;
         }
 
-        .notes-section p {
-            color: #aaa;
-            font-size: 0.9rem;
-        }
-
-        /* Report styles */
+        /* Report Styles */
         .report-content {
-            background: #1a1a1a;
-            padding: 40px;
-            border-radius: 12px;
-            border: 1px solid #2a2a2a;
+            background: transparent;
+            padding: 0;
         }
 
         .report-content h2 {
-            color: #667eea;
-            margin: 30px 0 15px;
+            font-size: 1.5rem;
+            border-bottom: 3px double #000;
             padding-bottom: 10px;
-            border-bottom: 1px solid #333;
-        }
-
-        .report-content h2:first-child {
-            margin-top: 0;
+            margin: 30px 0 20px;
+            text-transform: uppercase;
         }
 
         .report-content h3 {
-            color: #a0aec0;
-            margin: 25px 0 12px;
-        }
-
-        .report-content p {
-            margin: 12px 0;
-            color: #ccc;
+            font-size: 1.2rem;
+            margin: 25px 0 15px;
+            text-decoration: underline;
         }
 
         .report-content table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
-            font-size: 0.9rem;
+            border: var(--border-style);
         }
 
         .report-content th, .report-content td {
-            padding: 12px 15px;
+            padding: 10px;
             text-align: left;
-            border-bottom: 1px solid #333;
+            border: var(--border-style);
         }
 
         .report-content th {
-            background: #252525;
-            color: #888;
-            font-weight: 600;
+            background: #eee;
             text-transform: uppercase;
-            font-size: 0.8rem;
-        }
-
-        .report-content tr:hover {
-            background: #222;
-        }
-
-        .report-content strong {
-            color: #fff;
-        }
-
-        .report-content ul, .report-content ol {
-            margin: 15px 0;
-            padding-left: 25px;
-        }
-
-        .report-content li {
-            margin: 8px 0;
-            color: #bbb;
-        }
-
-        .report-content hr {
-            border: none;
-            border-top: 1px solid #333;
-            margin: 30px 0;
-        }
-
-        /* Expand/collapse icon */
-        .expand-icon {
-            transition: transform 0.3s;
-            color: #666;
-        }
-
-        .test-case.expanded .expand-icon {
-            transform: rotate(180deg);
+            font-weight: bold;
         }
 
         footer {
             text-align: center;
             padding: 30px;
-            color: #666;
-            font-size: 0.85rem;
-            border-top: 1px solid #222;
+            border-top: 3px double #000;
             margin-top: 50px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .holes-strip {
+                display: none;
+            }
+            .paper-wrapper {
+                flex-direction: column;
+            }
+            .summary-cards {
+                grid-template-columns: 1fr;
+            }
+            .audio-comparison {
+                grid-template-columns: 1fr;
+            }
+            .audio-panel:first-child {
+                border-right: none;
+                border-bottom: var(--border-style);
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>TTS Evaluation: Cartesia Sonic 3 vs ElevenLabs Flash v2.5</h1>
-        <p class="subtitle">46 evaluations across 4 languages</p>
-    </header>
+    <div class="paper-wrapper">
+        <div class="holes-strip">
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+        </div>
+        
+        <div class="main-content">
+            <header>
+                <h1>TTS Evaluation</h1>
+                <p class="subtitle">Cartesia Sonic 3 vs ElevenLabs Flash v2.5</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">DATE: DEC 2025 | REF: 46-EVAL-4-LANG</p>
+            </header>
 
-    <div class="tabs">
-        <button class="tab active" data-tab="comparison">Audio Comparison</button>
-        <button class="tab" data-tab="report">Analysis Report</button>
-    </div>
+            <div class="tabs">
+                <button class="tab active" data-tab="comparison">Audio Comparison</button>
+                <button class="tab" data-tab="report">Analysis Report</button>
+            </div>
 
-    <div class="container">
-        <!-- Audio Comparison Tab -->
-        <div id="comparison" class="tab-content active">
-            <div class="summary-cards">
-                <div class="summary-card">
-                    <h3>Quality Winner</h3>
-                    <div class="value cartesia">Cartesia</div>
-                    <div class="detail">3.07/5.0 vs 2.90/5.0 (+3.3%)</div>
+            <div class="container">
+                <!-- Audio Comparison Tab -->
+                <div id="comparison" class="tab-content active">
+                    <div class="summary-cards">
+                        <div class="summary-card">
+                            <h3>Quality Winner</h3>
+                            <div class="value cartesia">Cartesia</div>
+                            <div class="detail">3.07/5.0 vs 2.90/5.0 (+3.3%)</div>
+                        </div>
+                        <div class="summary-card">
+                            <h3>Speed Winner</h3>
+                            <div class="value elevenlabs">ElevenLabs</div>
+                            <div class="detail">0.89s vs 2.32s (2.61x faster)</div>
+                        </div>
+                        <div class="summary-card">
+                            <h3>Head-to-Head</h3>
+                            <div class="value">16-13-17</div>
+                            <div class="detail">Cartesia - ElevenLabs - Ties</div>
+                        </div>
+                        <div class="summary-card">
+                            <h3>Key Trade-off</h3>
+                            <div class="value" style="font-size: 1.1rem;">Naturalness vs Speed</div>
+                            <div class="detail">Cartesia +0.93 naturalness</div>
+                        </div>
+                    </div>
+
+                    <div class="filters">
+                        <div class="filter-group">
+                            <label>Language:</label>
+                            <select id="language-filter">
+                                <option value="all">All Languages</option>
+                                <option value="en">English (25)</option>
+                                <option value="de">German (7)</option>
+                                <option value="zh">Mandarin (7)</option>
+                                <option value="ja">Japanese (7)</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>Winner:</label>
+                            <select id="winner-filter">
+                                <option value="all">All</option>
+                                <option value="cartesia">Cartesia Wins</option>
+                                <option value="elevenlabs">ElevenLabs Wins</option>
+                                <option value="tie">Ties</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>Category:</label>
+                            <select id="category-filter">
+                                <option value="all">All Categories</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="test-cases-container"></div>
                 </div>
-                <div class="summary-card">
-                    <h3>Speed Winner</h3>
-                    <div class="value elevenlabs">ElevenLabs</div>
-                    <div class="detail">0.89s vs 2.32s (2.61x faster)</div>
-                </div>
-                <div class="summary-card">
-                    <h3>Head-to-Head</h3>
-                    <div class="value" style="color: #888;">16-13-17</div>
-                    <div class="detail">Cartesia - ElevenLabs - Ties</div>
-                </div>
-                <div class="summary-card">
-                    <h3>Key Trade-off</h3>
-                    <div class="value" style="font-size: 1.2rem; color: #a0aec0;">Naturalness vs Speed</div>
-                    <div class="detail">Cartesia +0.93 naturalness, ElevenLabs 2.61x faster</div>
+
+                <!-- Report Tab -->
+                <div id="report" class="tab-content">
+                    <div class="report-content" id="report-content"></div>
                 </div>
             </div>
 
-            <div class="filters">
-                <div class="filter-group">
-                    <label>Language:</label>
-                    <select id="language-filter">
-                        <option value="all">All Languages</option>
-                        <option value="en">English (25)</option>
-                        <option value="de">German (7)</option>
-                        <option value="zh">Mandarin (7)</option>
-                        <option value="ja">Japanese (7)</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label>Winner:</label>
-                    <select id="winner-filter">
-                        <option value="all">All</option>
-                        <option value="cartesia">Cartesia Wins</option>
-                        <option value="elevenlabs">ElevenLabs Wins</option>
-                        <option value="tie">Ties</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label>Category:</label>
-                    <select id="category-filter">
-                        <option value="all">All Categories</option>
-                    </select>
-                </div>
-            </div>
-
-            <div id="test-cases-container"></div>
-        </div>
-
-        <!-- Report Tab -->
-        <div id="report" class="tab-content">
-            <div class="report-content" id="report-content"></div>
+            <footer>
+                <p>*** END OF REPORT ***</p>
+                <p>TTS Evaluation Project | Generated December 2025</p>
+            </footer>
         </div>
     </div>
-
-    <footer>
-        <p>TTS Evaluation Project | Generated December 2025</p>
-    </footer>
 
     <script>
         // Evaluation data

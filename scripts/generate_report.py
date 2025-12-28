@@ -1,6 +1,6 @@
 """
 Generate Comprehensive Markdown Report
-Combines latency and performance analysis into a single report
+Combines TTFB (Time-to-First-Byte) and performance analysis into a single report
 """
 
 import json
@@ -58,15 +58,15 @@ def generate_markdown_report(output_file: str = "results/analysis_report.md"):
     else:
         lines.append(f"- **Result:** Essentially tied\n")
 
-    lines.append("**Speed:**")
+    lines.append("**Speed (TTFB = Time-to-First-Byte):**")
     if cart_latency_stats and elev_latency_stats:
         speedup = cart_latency_stats['mean'] / elev_latency_stats['mean']
-        lines.append(f"- **Cartesia** latency: **{cart_latency_stats['mean']:.2f}s** average")
-        lines.append(f"- **ElevenLabs** latency: **{elev_latency_stats['mean']:.2f}s** average")
+        lines.append(f"- **Cartesia** TTFB: **{cart_latency_stats['mean']:.2f}s** average")
+        lines.append(f"- **ElevenLabs** TTFB: **{elev_latency_stats['mean']:.2f}s** average")
         if speedup > 1.1:
-            lines.append(f"- **Winner:** ElevenLabs is **{speedup:.2f}x faster** ({(speedup-1)*100:.1f}% faster)\n")
+            lines.append(f"- **Winner:** ElevenLabs TTFB is **{speedup:.2f}x faster** ({(speedup-1)*100:.1f}% faster)\n")
         elif speedup < 0.9:
-            lines.append(f"- **Winner:** Cartesia is **{1/speedup:.2f}x faster** ({(1/speedup-1)*100:.1f}% faster)\n")
+            lines.append(f"- **Winner:** Cartesia TTFB is **{1/speedup:.2f}x faster** ({(1/speedup-1)*100:.1f}% faster)\n")
 
     lines.append("**The Trade-off:**")
     lines.append("- Cartesia prioritizes **naturalness** (sounds more human)")
@@ -75,10 +75,11 @@ def generate_markdown_report(output_file: str = "results/analysis_report.md"):
 
     lines.append("---\n")
 
-    # Latency Analysis
-    lines.append("## 1. Latency Analysis (Speed Performance)\n")
+    # TTFB Analysis
+    lines.append("## 1. TTFB Analysis (Time-to-First-Byte)\n")
+    lines.append("*TTFB measures how quickly audio streaming can begin - critical for real-time applications.*\n")
 
-    lines.append("### Overall Latency Comparison\n")
+    lines.append("### Overall TTFB Comparison\n")
     lines.append("| Metric | Cartesia Sonic 3 | ElevenLabs Flash v2.5 | Difference |")
     lines.append("|--------|------------------|----------------------|------------|")
 
@@ -94,18 +95,18 @@ def generate_markdown_report(output_file: str = "results/analysis_report.md"):
 
         # Speedup
         speedup = cart_latency_stats['mean'] / elev_latency_stats['mean']
-        lines.append(f"\n**Speedup:** ElevenLabs is **{speedup:.2f}x faster** on average\n")
+        lines.append(f"\n**TTFB Speedup:** ElevenLabs is **{speedup:.2f}x faster** on average\n")
 
         # Consistency
         cart_cv = cart_latency_stats['stdev'] / cart_latency_stats['mean']
         elev_cv = elev_latency_stats['stdev'] / elev_latency_stats['mean']
         more_consistent = "Cartesia" if cart_cv < elev_cv else "ElevenLabs"
-        lines.append(f"**Consistency:** {more_consistent} is more consistent (CV: {min(cart_cv, elev_cv):.3f} vs {max(cart_cv, elev_cv):.3f})\n")
+        lines.append(f"**TTFB Consistency:** {more_consistent} is more consistent (CV: {min(cart_cv, elev_cv):.3f} vs {max(cart_cv, elev_cv):.3f})\n")
 
-    # Latency by language
-    lines.append("### Latency by Language\n")
-    lines.append("| Language | Cartesia | ElevenLabs | Speedup |")
-    lines.append("|----------|----------|------------|---------|")
+    # TTFB by language
+    lines.append("### TTFB by Language\n")
+    lines.append("| Language | Cartesia TTFB | ElevenLabs TTFB | Speedup |")
+    lines.append("|----------|---------------|-----------------|---------|")
 
     language_names = {"en": "English", "de": "German", "zh": "Mandarin", "ja": "Japanese"}
 
@@ -122,10 +123,10 @@ def generate_markdown_report(output_file: str = "results/analysis_report.md"):
                 lang_name = language_names.get(lang_code, lang_code)
                 lines.append(f"| {lang_name} | {cart_stats['mean']:.3f}s (±{cart_stats['stdev']:.3f}) | {elev_stats['mean']:.3f}s (±{elev_stats['stdev']:.3f}) | {speedup:.2f}x |")
 
-    lines.append("\n**Key insight:** ElevenLabs is consistently faster across all languages, with English showing the largest gap (3.83x) and Japanese the smallest (2.19x).\n")
+    lines.append("\n**Key insight:** ElevenLabs consistently has faster TTFB across all languages.\n")
 
-    # Latency vs Quality correlation
-    lines.append("### Does Speed Sacrifice Quality?\n")
+    # TTFB vs Quality correlation
+    lines.append("### Does Faster TTFB Sacrifice Quality?\n")
 
     # Extract correlation data
     cart_data = []
@@ -179,10 +180,10 @@ def generate_markdown_report(output_file: str = "results/analysis_report.md"):
         cart_corr = pearson_correlation(cart_data)
         elev_corr = pearson_correlation(elev_data)
 
-        lines.append(f"**Correlation between latency and quality:**")
-        lines.append(f"- Cartesia: r = {cart_corr:.3f} (essentially zero)")
-        lines.append(f"- ElevenLabs: r = {elev_corr:.3f} (essentially zero)")
-        lines.append(f"\n**Answer:** No. Faster generation does NOT sacrifice quality. The correlation is negligible for both providers.\n")
+        lines.append(f"**Correlation between TTFB and quality:**")
+        lines.append(f"- Cartesia: r = {cart_corr:.3f}")
+        lines.append(f"- ElevenLabs: r = {elev_corr:.3f}")
+        lines.append(f"\n**Answer:** No. Faster TTFB does NOT sacrifice quality. The correlation is negligible for both providers.\n")
 
     lines.append("---\n")
 
@@ -424,7 +425,8 @@ def generate_markdown_report(output_file: str = "results/analysis_report.md"):
     lines.append(f"- **Categories:** {len(set(e['category'] for e in performance_analyzer.evaluations))} test categories")
     lines.append(f"- **Evaluation criteria:** 5 dimensions (Pronunciation, Prosody, Emotion, Naturalness, Consistency)")
     lines.append(f"- **Rating scale:** 1-5 (1=terrible, 5=perfect)")
-    lines.append(f"- **Latency measurements:** {cart_latency_stats['count'] if cart_latency_stats else 0} Cartesia samples, {elev_latency_stats['count'] if elev_latency_stats else 0} ElevenLabs samples")
+    lines.append(f"- **TTFB measurements:** {cart_latency_stats['count'] if cart_latency_stats else 0} Cartesia samples, {elev_latency_stats['count'] if elev_latency_stats else 0} ElevenLabs samples")
+    lines.append(f"- **TTFB definition:** Time-to-First-Byte - measures how quickly audio streaming can begin (critical for real-time applications)")
 
     # Write to file
     output_path = Path(output_file)

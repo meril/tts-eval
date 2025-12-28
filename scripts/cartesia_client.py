@@ -76,22 +76,34 @@ class CartesiaClient:
         start_time = time.time()
 
         try:
+            # Use streaming to measure TTFB accurately
             response = requests.post(
                 f"{self.base_url}/tts/bytes",
                 headers=headers,
                 json=payload,
-                timeout=30
+                timeout=30,
+                stream=True
             )
 
             response.raise_for_status()
 
-            generation_time = time.time() - start_time
-            audio_data = response.content
+            # Read first chunk to get accurate TTFB
+            chunks = []
+            for chunk in response.iter_content(chunk_size=8192):
+                if chunks == []:
+                    # First chunk received - this is TTFB
+                    ttfb = time.time() - start_time
+                chunks.append(chunk)
+
+            audio_data = b''.join(chunks)
+            total_time = time.time() - start_time
 
             return {
                 "status": "success",
                 "audio_data": audio_data,
-                "generation_time": generation_time,
+                "ttfb": ttfb,
+                "total_time": total_time,
+                "generation_time": ttfb,  # Keep for backwards compatibility
                 "text_length": len(text),
                 "model_id": model_id,
                 "voice_id": voice_id

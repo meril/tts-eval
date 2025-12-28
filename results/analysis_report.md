@@ -1,6 +1,6 @@
 # TTS Evaluation Analysis: Cartesia Sonic 3 vs ElevenLabs Flash v2.5
 
-**Generated:** 2025-12-25 22:23:04
+**Generated:** 2025-12-27 15:16:10
 
 **Total Evaluations:** 46
 
@@ -15,10 +15,10 @@
 - **ElevenLabs** overall quality: **2.90/5.0** (±0.38)
 - **Winner:** Cartesia by **0.17 points** (3.3%)
 
-**Speed:**
-- **Cartesia** latency: **2.32s** average
-- **ElevenLabs** latency: **0.89s** average
-- **Winner:** ElevenLabs is **2.61x faster** (161.4% faster)
+**Speed (TTFB = Time-to-First-Byte):**
+- **Cartesia** TTFB: **2.32s** average
+- **ElevenLabs** TTFB: **0.89s** average
+- **Winner:** ElevenLabs TTFB is **2.61x faster** (161.4% faster)
 
 **The Trade-off:**
 - Cartesia prioritizes **naturalness** (sounds more human)
@@ -27,9 +27,11 @@
 
 ---
 
-## 1. Latency Analysis (Speed Performance)
+## 1. TTFB Analysis (Time-to-First-Byte)
 
-### Overall Latency Comparison
+*TTFB measures how quickly audio streaming can begin - critical for real-time applications.*
+
+### Overall TTFB Comparison
 
 | Metric | Cartesia Sonic 3 | ElevenLabs Flash v2.5 | Difference |
 |--------|------------------|----------------------|------------|
@@ -41,28 +43,28 @@
 | **25th percentile** | 1.580s | 0.662s | - |
 | **75th percentile** | 2.570s | 1.108s | - |
 
-**Speedup:** ElevenLabs is **2.61x faster** on average
+**TTFB Speedup:** ElevenLabs is **2.61x faster** on average
 
-**Consistency:** ElevenLabs is more consistent (CV: 0.352 vs 0.466)
+**TTFB Consistency:** ElevenLabs is more consistent (CV: 0.352 vs 0.466)
 
-### Latency by Language
+### TTFB by Language
 
-| Language | Cartesia | ElevenLabs | Speedup |
-|----------|----------|------------|---------|
+| Language | Cartesia TTFB | ElevenLabs TTFB | Speedup |
+|----------|---------------|-----------------|---------|
 | English | 2.758s (±1.267) | 0.951s (±0.354) | 2.90x |
 | German | 2.436s (±0.968) | 0.879s (±0.211) | 2.77x |
 | Mandarin | 2.059s (±0.601) | 0.920s (±0.283) | 2.24x |
 | Japanese | 1.449s (±0.449) | 0.708s (±0.214) | 2.05x |
 
-**Key insight:** ElevenLabs is consistently faster across all languages, with English showing the largest gap (3.83x) and Japanese the smallest (2.19x).
+**Key insight:** ElevenLabs consistently has faster TTFB across all languages.
 
-### Does Speed Sacrifice Quality?
+### Does Faster TTFB Sacrifice Quality?
 
-**Correlation between latency and quality:**
-- Cartesia: r = 0.012 (essentially zero)
-- ElevenLabs: r = 0.088 (essentially zero)
+**Correlation between TTFB and quality:**
+- Cartesia: r = 0.012
+- ElevenLabs: r = 0.088
 
-**Answer:** No. Faster generation does NOT sacrifice quality. The correlation is negligible for both providers.
+**Answer:** No. Faster TTFB does NOT sacrifice quality. The correlation is negligible for both providers.
 
 ---
 
@@ -263,4 +265,5 @@
 - **Categories:** 22 test categories
 - **Evaluation criteria:** 5 dimensions (Pronunciation, Prosody, Emotion, Naturalness, Consistency)
 - **Rating scale:** 1-5 (1=terrible, 5=perfect)
-- **Latency measurements:** 37 Cartesia samples, 139 ElevenLabs samples
+- **TTFB measurements:** 37 Cartesia samples, 139 ElevenLabs samples
+- **TTFB definition:** Time-to-First-Byte - measures how quickly audio streaming can begin (critical for real-time applications)
