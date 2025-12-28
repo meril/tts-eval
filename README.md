@@ -88,16 +88,6 @@ tts-eval/
 └── vercel-site/             # Static site for sharing results
 ```
 
-## Test Categories
-
-- **Heteronyms** - Context-dependent pronunciation
-- **Numbers & Dates** - Formatting ambiguity
-- **Acronyms** - Business and medical abbreviations
-- **Medical Domain** - Complex medical terminology
-- **Financial Domain** - Financial jargon
-- **Prosody & Long-form** - Naturalness over time
-- **Edge Cases** - Mixed languages, quoted speech
-
 ## Evaluation Criteria
 
 Each audio sample is rated on a **1-5 scale** for:
@@ -110,13 +100,7 @@ Each audio sample is rated on a **1-5 scale** for:
 | **Naturalness** | Sounds like a native speaker |
 | **Consistency** | Same quality across generations |
 
-## Key Findings
 
-Based on 46 evaluations across 4 languages:
-
-- **Quality Winner:** Cartesia (3.07/5.0 vs 2.90/5.0)
-- **Speed Winner:** ElevenLabs (2.61x faster)
-- **Key Trade-off:** Cartesia prioritizes naturalness, ElevenLabs prioritizes speed
 
 ## License
 
